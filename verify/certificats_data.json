@@ -5,7 +5,7 @@
     "date": "2026-07-12",
     "lieu": "FST Brazzaville",
     "organisateur": "Pr Aime Christian KAYATH",
-    "total_certificats": 286
+    "total_certificats": 289
   },
   "certificats": {
     "P-44A289DA0C99": {
@@ -2577,6 +2577,33 @@
       "nom": "BABEDISSA ANTONNELLA-THYD-RACHELDA",
       "type": "organisateur",
       "type_label": "Organisateur",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-44551D9A180C": {
+      "nom": "BAZOUZI MAMBOU DERLICH GILYANN",
+      "type": "participant",
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "C-E6CA61452D39": {
+      "nom": "ITANGISHAKA ANGELIQUE",
+      "type": "challenger",
+      "type_label": "Communication",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "O-99D211EB3942": {
+      "nom": "PELELE MOUANZA YOCHIDA MARDELEV",
+      "type": "organisation",
+      "type_label": "Organisation",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
