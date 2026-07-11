@@ -5,7 +5,7 @@
     "date": "2026-07-12",
     "lieu": "FST Brazzaville",
     "organisateur": "Pr Aime Christian KAYATH",
-    "total_certificats": 238
+    "total_certificats": 248
   },
   "certificats": {
     "P-44A289DA0C99": {
@@ -2145,6 +2145,96 @@
       "nom": "MBOUKOU Gabrinette",
       "type": "challenger",
       "type_label": "Challenger",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-C5B9FD3DE1F6": {
+      "nom": "MANKOUNDOU Vina Patience",
+      "type": "participant",
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-C9D95AD8B866": {
+      "nom": "OUAMPANA NIZLOV Suzana",
+      "type": "participant",
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-0E353C5517C4": {
+      "nom": "PELELE MOUANZA Yochida Mardelev",
+      "type": "participant",
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-39DE2070D80C": {
+      "nom": "NZAOU POMBO Juste Davelie",
+      "type": "participant",
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-E2B50E3C30AF": {
+      "nom": "PAMBOU Djins Norvelon",
+      "type": "participant",
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-33FC76A8BC77": {
+      "nom": "MADINGOU DIGUELE Nisèle Claudia",
+      "type": "participant",
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-CBDAD552129D": {
+      "nom": "NGATSE Silvère Chadrac",
+      "type": "participant",
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-439157E13892": {
+      "nom": "NGUIMBI Estime Génie Bonheur",
+      "type": "participant",
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-2E0EA52FBF7C": {
+      "nom": "OKIERI Dianice Ludmil",
+      "type": "participant",
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-3D52C06B86F7": {
+      "nom": "MBOUKOU Gabrinette",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
