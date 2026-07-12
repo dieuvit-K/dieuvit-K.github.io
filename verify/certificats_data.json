@@ -19,8 +19,8 @@
     },
     "O-3133380CE04D": {
       "nom": "MAMPASSI MATONDO REVY VICTOIRE",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -37,8 +37,8 @@
     },
     "C-A7EB8C3A9122": {
       "nom": "ALTIKEDY CHIBALOGUE MBADINGA",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -55,8 +55,8 @@
     },
     "O-48F637182258": {
       "nom": "BANDZOUSSI DYOBALT GLOIRE JORDY",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -64,8 +64,8 @@
     },
     "O-57B9DFB2CAC9": {
       "nom": "BANTSIMBA MALONGA LOÏC MARLYE DJESONE",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -91,8 +91,8 @@
     },
     "O-66754FDD3E4B": {
       "nom": "BAYAKISSA MALANDA CHRIST DIEUVEIL",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -136,8 +136,8 @@
     },
     "C-023F8797CDE8": {
       "nom": "BILENDO PARICH AMANE GAROLE",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -154,8 +154,8 @@
     },
     "O-997B2F9F6703": {
       "nom": "BISSOKO JUNIOR",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -172,8 +172,8 @@
     },
     "O-4CBDCE0D36D4": {
       "nom": "BOMBA GERCY BEAUDRICHE",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -208,8 +208,8 @@
     },
     "O-ABF7E79CCA86": {
       "nom": "BORO JUVENIE VALENCIA",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -217,8 +217,8 @@
     },
     "O-91C9A092FFCA": {
       "nom": "BOSSIMBA AKOA ABIGAELLE VERTUEUSE",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -334,8 +334,8 @@
     },
     "O-DA86743E1ADA": {
       "nom": "FRÉDÉRIC YANNICK OKOUAKOUA",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -343,8 +343,8 @@
     },
     "C-66015D3A943F": {
       "nom": "FRISE JONATHAN NGALIFOUROU",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -415,8 +415,8 @@
     },
     "C-F7ED1D298F55": {
       "nom": "ITANGISHAKA ANGELIQUE",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -424,8 +424,8 @@
     },
     "O-9F0F52924DC8": {
       "nom": "ITOUA CLARCK HARIAN",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -433,8 +433,8 @@
     },
     "O-E89F54708440": {
       "nom": "ITOUAD YVETTE SYLVANIE ROSELINA",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -577,8 +577,8 @@
     },
     "O-DED88EE96993": {
       "nom": "KOUNKOU SHEKINA",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -667,8 +667,8 @@
     },
     "C-16C6BDCCB75A": {
       "nom": "MABIKA FRED JUDELAIN",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -757,8 +757,8 @@
     },
     "C-B77139DA8474": {
       "nom": "MAKAYA DURCEL VIVE CHADRACK",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -766,8 +766,8 @@
     },
     "O-68ADEEA21C73": {
       "nom": "MAKOSSO FERREOL YANNICK BONHEUR",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -793,8 +793,8 @@
     },
     "C-C7FEF9D7DAD7": {
       "nom": "MAMBOUENI HODIÉ JULBARTH",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -820,8 +820,8 @@
     },
     "C-677F8E94A46C": {
       "nom": "MANKOUNDOU VINA PATIENCE",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1018,8 +1018,8 @@
     },
     "O-F1254FA6116B": {
       "nom": "MOUANDA KOUKEBO AUBERCIA DARNEY",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1027,8 +1027,8 @@
     },
     "O-87239A5233E9": {
       "nom": "MOUANDA PRINCE HARDI",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1036,8 +1036,8 @@
     },
     "O-510F0C4A06F4": {
       "nom": "MOUFOUMA MBOU SYLVAIN",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1045,8 +1045,8 @@
     },
     "C-662748E60328": {
       "nom": "MOUKOU MARTYCE KALEB",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1162,8 +1162,8 @@
     },
     "O-062EE8FFF2EE": {
       "nom": "NGALEBONI RIFATHE ELDA",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1216,8 +1216,8 @@
     },
     "O-E467158241DF": {
       "nom": "NGOUAKA DAGLICH",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1225,8 +1225,8 @@
     },
     "C-10D290D3D37E": {
       "nom": "NGOUEMBE ELOBAKIMA PRINCESSE DORCAS",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1243,8 +1243,8 @@
     },
     "O-7D0DC3A7F4E7": {
       "nom": "NGOULOU KOTOMA WILKER VÉNYA",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1270,8 +1270,8 @@
     },
     "C-7B13FADF8417": {
       "nom": "NGUIMBI ESTIME GÉNIE BONHEUR",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1378,8 +1378,8 @@
     },
     "O-19D63737F48F": {
       "nom": "NSONGO BANZOUZI ANNA CHRISVANELLE",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1387,8 +1387,8 @@
     },
     "O-1EE0B0419AB9": {
       "nom": "NTSANA RODINET",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1414,8 +1414,8 @@
     },
     "C-EB7467091847": {
       "nom": "NZOMONO BLONDE CHRISNA",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1450,8 +1450,8 @@
     },
     "O-224E6868A9EE": {
       "nom": "OGNA EMILIA",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1459,8 +1459,8 @@
     },
     "C-1A45F04F0126": {
       "nom": "OHARA MESNARD DE MESNARD",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1477,8 +1477,8 @@
     },
     "C-1BE18E8B8AB1": {
       "nom": "OKIERI DIANICE LUDMIL",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1495,8 +1495,8 @@
     },
     "C-96B7003D4398": {
       "nom": "OKUYA MARINA DIANA",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1513,8 +1513,8 @@
     },
     "O-7802E1641AA0": {
       "nom": "ONGONDZELE-ODZIKI DARIL BARICHY",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1576,8 +1576,8 @@
     },
     "C-71F7F685ED0E": {
       "nom": "OUAMPANA NIZLOV SUZANA",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1594,8 +1594,8 @@
     },
     "O-04651A30F133": {
       "nom": "PANGHOUD ELIORA GALLIA",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1612,8 +1612,8 @@
     },
     "C-91DA214506D4": {
       "nom": "PELELE MOUANZA YOCHIDA MARDELEV",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1684,8 +1684,8 @@
     },
     "C-B81B355F1516": {
       "nom": "SEPHORA DANIELLE DIAMOUASSI",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1693,8 +1693,8 @@
     },
     "C-8FD6AE1FE79F": {
       "nom": "SILVÈRE CHADRAC NGATSE",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1711,8 +1711,8 @@
     },
     "O-B838D8834345": {
       "nom": "TATY AIMERODE DIEU-MERCI",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1846,8 +1846,8 @@
     },
     "C-21FE40947364": {
       "nom": "DOUAKOU NKENZO LORCYE JULSANDRE",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1882,8 +1882,8 @@
     },
     "O-66260C64DABB": {
       "nom": "DIANIONGUENA MONICIA WILVIE",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1909,8 +1909,8 @@
     },
     "C-B98AA7B1D1F8": {
       "nom": "MOKONO HANGUILA HERMAN",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1954,8 +1954,8 @@
     },
     "C-0E0B35B671B9": {
       "nom": "PASSY MERCIA JOYCE CLARA",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1972,8 +1972,8 @@
     },
     "O-791C9748F429": {
       "nom": "GOUAKA SOLEILLA",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -1981,8 +1981,8 @@
     },
     "O-37472DD14BFF": {
       "nom": "BABEDISSA ANTONNELLA-THYD-RACHELDA",
-      "type": "organisation",
-      "type_label": "Organisation",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -2008,8 +2008,8 @@
     },
     "C-3AD27ED19300": {
       "nom": "MASSAMBA-HOUMBA JESSICA-FREDE",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -2053,8 +2053,8 @@
     },
     "C-B9EE39A59E97": {
       "nom": "MABOUIMBA MOUTENDI DESTIN CHAMYRRHE",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
@@ -2115,43 +2115,43 @@
       "valide": true
     },
     "C-F84A31E6F7DC": {
-      "nom": "NZAOU POMBO Juste Davelie",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "nom": "NZAOU POMBO JUSTE DAVELIE",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
       "valide": true
     },
     "C-DFD0E3F7C7CF": {
-      "nom": "PAMBOU Djins Norvelon",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "nom": "PAMBOU DJINS NORVELON",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
       "valide": true
     },
     "C-0F5995805487": {
-      "nom": "MADINGOU DIGUELE Nisèle Claudia",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "nom": "MADINGOU DIGUELE NISÈLE CLAUDIA",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
       "valide": true
     },
     "C-9D2851EDFA5F": {
-      "nom": "MBOUKOU Gabrinette",
-      "type": "challenger",
-      "type_label": "Challenger",
+      "nom": "MBOUKOU GABRINETTE",
+      "type": "participant",
+      "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
       "date": "12 Juillet 2026",
       "lieu": "FST Brazzaville",
       "valide": true
     },
     "P-C5B9FD3DE1F6": {
-      "nom": "MANKOUNDOU Vina Patience",
+      "nom": "MANKOUNDOU VINA PATIENCE",
       "type": "participant",
       "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
@@ -2160,7 +2160,7 @@
       "valide": true
     },
     "P-C9D95AD8B866": {
-      "nom": "OUAMPANA NIZLOV Suzana",
+      "nom": "OUAMPANA NIZLOV SUZANA",
       "type": "participant",
       "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
@@ -2169,7 +2169,7 @@
       "valide": true
     },
     "P-0E353C5517C4": {
-      "nom": "PELELE MOUANZA Yochida Mardelev",
+      "nom": "PELELE MOUANZA YOCHIDA MARDELEV",
       "type": "participant",
       "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
@@ -2178,7 +2178,7 @@
       "valide": true
     },
     "P-39DE2070D80C": {
-      "nom": "NZAOU POMBO Juste Davelie",
+      "nom": "NZAOU POMBO JUSTE DAVELIE",
       "type": "participant",
       "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
@@ -2187,7 +2187,7 @@
       "valide": true
     },
     "P-E2B50E3C30AF": {
-      "nom": "PAMBOU Djins Norvelon",
+      "nom": "PAMBOU DJINS NORVELON",
       "type": "participant",
       "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
@@ -2196,7 +2196,7 @@
       "valide": true
     },
     "P-33FC76A8BC77": {
-      "nom": "MADINGOU DIGUELE Nisèle Claudia",
+      "nom": "MADINGOU DIGUELE NISÈLE CLAUDIA",
       "type": "participant",
       "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
@@ -2205,7 +2205,7 @@
       "valide": true
     },
     "P-CBDAD552129D": {
-      "nom": "NGATSE Silvère Chadrac",
+      "nom": "NGATSE SILVÈRE CHADRAC",
       "type": "participant",
       "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
@@ -2214,7 +2214,7 @@
       "valide": true
     },
     "P-439157E13892": {
-      "nom": "NGUIMBI Estime Génie Bonheur",
+      "nom": "NGUIMBI ESTIME GÉNIE BONHEUR",
       "type": "participant",
       "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
@@ -2223,7 +2223,7 @@
       "valide": true
     },
     "P-2E0EA52FBF7C": {
-      "nom": "OKIERI Dianice Ludmil",
+      "nom": "OKIERI DIANICE LUDMIL",
       "type": "participant",
       "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
@@ -2232,7 +2232,7 @@
       "valide": true
     },
     "P-3D52C06B86F7": {
-      "nom": "MBOUKOU Gabrinette",
+      "nom": "MBOUKOU GABRINETTE",
       "type": "participant",
       "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
