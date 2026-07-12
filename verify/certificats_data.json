@@ -5,7 +5,7 @@
     "date": "2026-07-12",
     "lieu": "FST Brazzaville",
     "organisateur": "Pr Aime Christian KAYATH",
-    "total_certificats": 248
+    "total_certificats": 253
   },
   "certificats": {
     "P-44A289DA0C99": {
@@ -2233,6 +2233,51 @@
     },
     "P-3D52C06B86F7": {
       "nom": "MBOUKOU GABRINETTE",
+      "type": "participant",
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-459376C75360": {
+      "nom": "BAYIS INES",
+      "type": "participant",
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-AF774DB0BEC6": {
+      "nom": "IBALA DORCIA",
+      "type": "participant",
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-6431DD3E97B5": {
+      "nom": "ZOUZI DELAN",
+      "type": "participant",
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-0D199069C575": {
+      "nom": "BOUMPOUTHOUD DECHVIE JEANNIS MELISSA",
+      "type": "participant",
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-3B531DFBB759": {
+      "nom": "BANZOUZI NDOUDI DJOVEL",
       "type": "participant",
       "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
