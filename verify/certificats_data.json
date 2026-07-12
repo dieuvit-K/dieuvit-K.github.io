@@ -5,7 +5,7 @@
     "date": "2026-07-12",
     "lieu": "FST Brazzaville",
     "organisateur": "Pr Aime Christian KAYATH",
-    "total_certificats": 253
+    "total_certificats": 255
   },
   "certificats": {
     "P-44A289DA0C99": {
@@ -2278,6 +2278,24 @@
     },
     "P-3B531DFBB759": {
       "nom": "BANZOUZI NDOUDI DJOVEL",
+      "type": "participant",
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-4A34CE893CA8": {
+      "nom": "N'GOMA M'PAMBOU DÉLUGE GHISS DIVINE",
+      "type": "participant",
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-2386C67183A8": {
+      "nom": "TCHICAYA ELVIRA LUCRÈCE",
       "type": "participant",
       "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
