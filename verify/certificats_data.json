@@ -5,7 +5,7 @@
     "date": "2026-07-12",
     "lieu": "FST Brazzaville",
     "organisateur": "Pr Aime Christian KAYATH",
-    "total_certificats": 255
+    "total_certificats": 256
   },
   "certificats": {
     "P-44A289DA0C99": {
@@ -2296,6 +2296,15 @@
     },
     "P-2386C67183A8": {
       "nom": "TCHICAYA ELVIRA LUCRÈCE",
+      "type": "participant",
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
+    },
+    "P-6514C05DC9FC": {
+      "nom": "EBIBIELE OSSA LIKAMBO RACHINELLE",
       "type": "participant",
       "type_label": "Participant",
       "evenement": "Journee des Sciences Biologiques - 2e Edition",
