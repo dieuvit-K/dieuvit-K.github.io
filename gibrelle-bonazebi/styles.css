@@ -250,6 +250,23 @@ body {
   border-radius: 0 8px 8px 0;
   font-size: 1rem;
 }
+.about-sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
+.about-photo {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid var(--slate-200);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition);
+}
+.about-photo:hover {
+  border-color: var(--teal);
+  box-shadow: var(--shadow-lg);
+}
+.about-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 .stat-card {
   background: var(--white);
