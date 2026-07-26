@@ -131,6 +131,36 @@ body {
   opacity: 0.5;
 }
 .hero-content { position: relative; z-index: 2; max-width: 800px; }
+.hero-photo {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1.5rem;
+  border: 3px solid rgba(45,212,191,0.3);
+  box-shadow: 0 0 40px rgba(45,212,191,0.15);
+  transition: all var(--transition);
+}
+.hero-photo:hover {
+  border-color: var(--teal);
+  box-shadow: 0 0 60px rgba(45,212,191,0.3);
+  transform: scale(1.05);
+}
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.hero-photo::after {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 1px solid rgba(45,212,191,0.15);
+  pointer-events: none;
+}
 .hero-badge {
   display: inline-block;
   padding: 0.35rem 1rem;
@@ -249,23 +279,6 @@ body {
   border-left: 3px solid var(--teal);
   border-radius: 0 8px 8px 0;
   font-size: 1rem;
-}
-.about-sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
-.about-photo {
-  border-radius: 14px;
-  overflow: hidden;
-  border: 2px solid var(--slate-200);
-  box-shadow: var(--shadow-md);
-  transition: all var(--transition);
-}
-.about-photo:hover {
-  border-color: var(--teal);
-  box-shadow: var(--shadow-lg);
-}
-.about-photo img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 .stat-card {
