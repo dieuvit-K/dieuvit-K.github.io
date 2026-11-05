@@ -2315,12 +2315,20 @@
     "P-8307E1CE66A4": {
       "nom": "EBIBIELE OSSA Likambo Rachinelle",
       "type": "participant",
-      "type_label": "Attestation de Participation"
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
     },
     "P-E6736E3767C8": {
       "nom": "MPELA-MPOMBO Grâce-Dolianne",
       "type": "participant",
-      "type_label": "Attestation de Participation"
+      "type_label": "Participant",
+      "evenement": "Journee des Sciences Biologiques - 2e Edition",
+      "date": "12 Juillet 2026",
+      "lieu": "FST Brazzaville",
+      "valide": true
     },
     "O-EDFCDF3CFADF": {
       "nom": "DIEUVIT HAÏDIDE KIBAMBA NIANGUI",
