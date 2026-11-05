@@ -33,12 +33,12 @@
 
     navLinks.forEach((link) => {
       link.addEventListener('click', () => {
-        if (window.innerWidth <= 1080) setMenu(false);
+        if (window.innerWidth <= 1180) setMenu(false);
       });
     });
 
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 1080) setMenu(false);
+      if (window.innerWidth > 1180) setMenu(false);
     });
 
     document.addEventListener('click', (e) => {
