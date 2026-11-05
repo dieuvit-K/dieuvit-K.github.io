@@ -123,17 +123,105 @@ ul, ol { list-style: none; }
 .nav-toggle.open span:nth-child(2) { opacity: 0; }
 .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ------------------ Hero ------------------ */
+/* ------------------ Hero & Aurora Blobs ------------------ */
 .hero {
   min-height: 100vh;
   display: flex; flex-direction: column; justify-content: center;
   padding: 140px 32px 80px;
   position: relative;
+  overflow: hidden;
   background:
     radial-gradient(circle at 85% 15%, rgba(166,132,59,.08), transparent 45%),
     radial-gradient(circle at 10% 90%, rgba(109,34,48,.07), transparent 40%);
 }
-.hero-inner { max-width: var(--maxw); margin: 0 auto; width: 100%; }
+.hero-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Aurora Blobs Background (speed: 0.5 / fluide et immersif) */
+.aurora-blobs {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.70;
+}
+.aurora-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  will-change: transform;
+  mix-blend-mode: multiply;
+}
+
+/* Blob 1 : Bordeaux doux (vitesse 0.5) */
+.blob-1 {
+  width: clamp(340px, 48vw, 620px);
+  height: clamp(340px, 48vw, 620px);
+  top: -12%;
+  left: 6%;
+  background: radial-gradient(circle, rgba(109, 34, 48, 0.24) 0%, rgba(109, 34, 48, 0) 70%);
+  animation: auroraDrift1 22s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+
+/* Blob 2 : Or solaire subtil */
+.blob-2 {
+  width: clamp(300px, 42vw, 560px);
+  height: clamp(300px, 42vw, 560px);
+  top: 25%;
+  right: -6%;
+  background: radial-gradient(circle, rgba(166, 132, 59, 0.26) 0%, rgba(166, 132, 59, 0) 70%);
+  animation: auroraDrift2 26s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+
+/* Blob 3 : Teinte rose bordeaux & or */
+.blob-3 {
+  width: clamp(280px, 36vw, 500px);
+  height: clamp(280px, 36vw, 500px);
+  bottom: -5%;
+  left: 22%;
+  background: radial-gradient(circle, rgba(143, 36, 55, 0.20) 0%, rgba(166, 132, 59, 0.12) 50%, transparent 70%);
+  animation: auroraDrift3 20s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+
+/* Blob 4 : Halo d'équilibre sous la zone photo */
+.blob-4 {
+  width: clamp(240px, 32vw, 440px);
+  height: clamp(240px, 32vw, 440px);
+  top: 15%;
+  right: 22%;
+  background: radial-gradient(circle, rgba(197, 160, 89, 0.22) 0%, rgba(109, 34, 48, 0.08) 60%, transparent 70%);
+  animation: auroraDrift4 28s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+
+@keyframes auroraDrift1 {
+  0% { transform: translate3d(0, 0, 0) scale(1) rotate(0deg); }
+  50% { transform: translate3d(70px, 50px, 0) scale(1.10) rotate(35deg); }
+  100% { transform: translate3d(-40px, 80px, 0) scale(0.95) rotate(70deg); }
+}
+
+@keyframes auroraDrift2 {
+  0% { transform: translate3d(0, 0, 0) scale(1) rotate(0deg); }
+  50% { transform: translate3d(-60px, -40px, 0) scale(1.08) rotate(-30deg); }
+  100% { transform: translate3d(40px, -70px, 0) scale(1.15) rotate(-60deg); }
+}
+
+@keyframes auroraDrift3 {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(-50px, -35px, 0) scale(1.12); }
+  100% { transform: translate3d(60px, 30px, 0) scale(0.96); }
+}
+
+@keyframes auroraDrift4 {
+  0% { transform: translate3d(0, 0, 0) scale(0.96); }
+  50% { transform: translate3d(45px, 35px, 0) scale(1.08); }
+  100% { transform: translate3d(-35px, 50px, 0) scale(1.02); }
+}
 
 .hero-top {
   display: grid;
@@ -217,8 +305,14 @@ ul, ol { list-style: none; }
   border: 1px solid var(--bordeaux);
   z-index: 1;
   transition: top .5s ease, left .5s ease;
+  animation: frameBreathe 8s ease-in-out infinite;
 }
 .hero-photo:hover .photo-frame { top: 12px; left: 12px; }
+
+@keyframes frameBreathe {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(-3px, -3px, 0); }
+}
 
 .btn {
   font-family: var(--sans);
@@ -229,6 +323,12 @@ ul, ol { list-style: none; }
   transition: all .35s ease;
   display: inline-flex; align-items: center; gap: 10px;
   cursor: pointer;
+}
+.btn svg {
+  transition: transform .3s ease;
+}
+.btn:hover svg {
+  transform: translateX(3px);
 }
 .btn-primary {
   background: var(--bordeaux);
@@ -493,6 +593,26 @@ ul, ol { list-style: none; }
   color: var(--white);
   padding: 5px 12px;
   border-radius: 20px;
+  animation: badgeGlimmer 3.8s ease-in-out infinite;
+}
+@keyframes badgeGlimmer {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(166, 132, 59, 0.45); }
+  50% { box-shadow: 0 0 0 5px rgba(166, 132, 59, 0); }
+}
+
+.parcours-ia-card::before,
+.projet-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+.parcours-ia-card:hover::before,
+.projet-card:hover::before {
+  opacity: 1;
 }
 .service-icon {
   font-size: 38px;
@@ -723,6 +843,12 @@ ul, ol { list-style: none; }
   padding: 20px 18px;
   border-radius: var(--radius);
   position: relative;
+  transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+}
+.pipeline-step:hover {
+  transform: translateY(-4px);
+  border-color: var(--bordeaux);
+  box-shadow: 0 10px 24px rgba(109, 34, 48, 0.08);
 }
 .pipeline-step-num {
   font-family: var(--sans);
@@ -1167,7 +1293,13 @@ ul, ol { list-style: none; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: .01ms !important;
+  }
+  .aurora-blob,
+  .photo-frame,
+  .service-badge {
+    animation: none !important;
   }
   .reveal { opacity: 1; transform: none; }
   html { scroll-behavior: auto; }
