@@ -20,8 +20,13 @@
   <meta name="twitter:description" content="Formations pratiques en intelligence artificielle (débutant à expert), accompagnement de projets et recherche en microbiologie." />
   <meta name="twitter:image" content="https://dieuvit-k.github.io/dieuvit.github.io/assets/photo.jpg" />
 
-  <!-- Preload hero image (LCP) -->
-  <link rel="preload" as="image" href="assets/photo.jpg" fetchpriority="high" />
+  <!-- Preload local WOFF2 fonts (Règle 29) -->
+  <link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/inter-600.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/cormorant-600.woff2" as="font" type="font/woff2" crossorigin />
+
+  <!-- Preload hero WebP image (LCP - Règle 2) -->
+  <link rel="preload" as="image" href="assets/photo.webp" type="image/webp" fetchpriority="high" />
 
   <!-- Schema.org structured data -->
   <script type="application/ld+json">
@@ -60,10 +65,7 @@
 
   <meta name="description" content="Dieuvit Haïdide Kibamba Niangui — Formateur en intelligence artificielle, doctorant en biochimie et microbiologie, et entrepreneur. Formations pratiques du débutant à l'expert, accompagnement de projets et recherche scientifique." />
   <title>Dieuvit Haïdide Kibamba Niangui — Formations en Intelligence Artificielle &amp; Accompagnement</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2.3" />
 </head>
 <body>
 
@@ -133,7 +135,10 @@
           </div>
 
           <div class="hero-photo reveal">
-            <img src="assets/photo.jpg" alt="Portrait de Dieuvit Haïdide Kibamba Niangui" width="360" height="432" />
+            <picture>
+              <source srcset="assets/photo.webp" type="image/webp" />
+              <img src="assets/photo.jpg" alt="Portrait de Dieuvit Haïdide Kibamba Niangui" width="370" height="444" fetchpriority="high" />
+            </picture>
             <span class="photo-frame"></span>
           </div>
         </div>
@@ -357,7 +362,10 @@
           <!-- mwa Sape -->
           <article class="projet-card reveal">
             <div class="projet-logo">
-              <img src="assets/mwa-sape-logo.jpg" alt="Logo officiel mwa Sape" width="170" height="92" />
+              <picture>
+                <source srcset="assets/mwa-sape-logo.webp" type="image/webp" />
+                <img src="assets/mwa-sape-logo.jpg" alt="Logo officiel mwa Sape" width="180" height="98" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <span class="projet-badge">Marque en construction</span>
             <h3 class="projet-title">mwa Sape</h3>
@@ -902,6 +910,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2.3" defer></script>
 </body>
 </html>
