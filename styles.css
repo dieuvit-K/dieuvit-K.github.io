@@ -101,7 +101,10 @@ h1, h2, h3, h4, .fact dt, .pipeline-num, .thesis-axes li::before, .pub-year stro
 .section-sub { font-size: 18.5px; color: var(--ink-2); margin-top: 16px; }
 
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .grid-gap-top { margin-top: 24px; }
+.tool-dot { width: 9px; height: 9px; margin: 0 3px; border-radius: 50%; background: var(--accent); opacity: .7; }
+.tool-dot-office { background: var(--green); }
 
 /* ------------------ En-tête ------------------ */
 .site-header {
@@ -448,7 +451,32 @@ h1, h2, h3, h4, .fact dt, .pipeline-num, .thesis-axes li::before, .pub-year stro
 .contact-card .icon { width: 22px; height: 22px; color: #D7B98F; margin-bottom: 10px; }
 .contact-label { font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--on-dark-2); }
 .contact-value { font-size: 16.5px; font-weight: 600; color: var(--on-dark); word-break: break-word; }
-.contact-actions { text-align: center; }
+.contact-form { max-width: 820px; margin: 0 auto; color: var(--ink); padding: 36px 36px 30px; text-align: left; }
+.contact-form:hover { transform: none; }
+.form-head { margin-bottom: 22px; }
+.form-head .card-title { margin-bottom: 4px; }
+.form-note { font-size: 14.5px; color: var(--ink-3); }
+.form-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 20px; }
+.field { display: flex; flex-direction: column; gap: 6px; border: 0; min-width: 0; }
+.field-full { grid-column: 1 / -1; }
+.field > span, .field legend { font-size: 14px; font-weight: 600; color: var(--ink-2); }
+.field input, .field select, .field textarea {
+  font: inherit; font-size: 16px; color: var(--ink);
+  background: #fff; border: 1px solid var(--line-strong); border-radius: 8px;
+  padding: 11px 13px; width: 100%;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.field textarea { resize: vertical; min-height: 120px; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.field .invalid { border-color: #A3322B; }
+.radios { display: flex; flex-wrap: wrap; gap: 10px 22px; padding-top: 4px; }
+.radios label { display: inline-flex; align-items: center; gap: 8px; font-size: 15.5px; cursor: pointer; }
+.radios input { accent-color: var(--accent); width: 17px; height: 17px; }
+.form-foot { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; margin-top: 26px; }
+.form-status { font-size: 15px; font-weight: 600; }
+.form-status.ok { color: #2F6B45; }
+.form-status.err { color: #A3322B; }
+.btn[disabled] { opacity: .6; cursor: wait; transform: none; }
 
 /* ------------------ Pied de page ------------------ */
 .site-footer { background: #160F09; color: var(--on-dark-2); padding: 36px 0; }
@@ -488,7 +516,7 @@ h1, h2, h3, h4, .fact dt, .pipeline-num, .thesis-axes li::before, .pub-year stro
 }
 
 @media (max-width: 860px) {
-  .grid-2, .levels { grid-template-columns: 1fr; }
+  .grid-2, .grid-3, .levels { grid-template-columns: 1fr; }
   .hero-facts { grid-template-columns: repeat(2, 1fr); }
   .fact:nth-child(3) { padding-left: 0; border-left: 0; }
   .fact { padding-bottom: 18px; }
@@ -513,7 +541,9 @@ h1, h2, h3, h4, .fact dt, .pipeline-num, .thesis-axes li::before, .pub-year stro
   .hero-actions .btn-primary, .hero-actions .btn-ghost { flex: 1 1 100%; }
   .card, .feature, .thesis, .publication { padding: 26px 22px; }
   .card-title-lg { font-size: 27px; }
-  .skills, .pipeline, .contact-grid { grid-template-columns: 1fr; }
+  .skills, .pipeline, .contact-grid, .form-grid { grid-template-columns: 1fr; }
+  .contact-form { padding: 26px 20px; }
+  .form-foot .btn { flex: 1 1 100%; }
   .feature-head { flex-direction: column; gap: 14px; }
   .cta-band { padding: 24px 22px; }
   .cta-band-actions .btn { flex: 1 1 100%; }

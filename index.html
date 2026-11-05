@@ -50,7 +50,7 @@
       "https://github.com/dieuvit-k",
       "https://www.tiktok.com/@leraconteur242"
     ],
-    "knowsLanguage": ["fr", "en"],
+    "knowsLanguage": ["fr"],
     "affiliation": [
       { "@type": "Organization", "name": "Université Marien Ngouabi" },
       { "@type": "Organization", "name": "IRSEN, Institut National de Recherche en Sciences Exactes et Naturelles" }
@@ -59,7 +59,7 @@
   </script>
 
   <script>document.documentElement.classList.add('js');</script>
-  <link rel="stylesheet" href="styles.css?v=5.0" />
+  <link rel="stylesheet" href="styles.css?v=5.1" />
 </head>
 <body>
 
@@ -134,7 +134,7 @@
           </p>
 
           <div class="hero-actions reveal">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSetFTX6f4Kh8R5UTbJ2Zm1-r2BgspWQXeD_Ipt8B37kkQXX9Q/viewform" target="_blank" rel="noopener" class="btn btn-primary">Planifier une formation</a>
+            <a href="#formulaire" data-type="Formation à l'Intelligence Artificielle" class="btn btn-primary">Planifier une formation</a>
             <a href="https://wa.me/242065058034" target="_blank" rel="noopener" class="btn btn-ghost">Discuter d'un projet</a>
             <button type="button" id="downloadCv" class="btn btn-link">
               <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
@@ -151,7 +151,14 @@
               <li><img src="assets/ia/antigravity.svg" alt="" width="16" height="16" />Antigravity</li>
               <li><img src="assets/ia/deepseek.svg" alt="" width="16" height="16" />DeepSeek</li>
               <li><img src="assets/ia/mistralai.svg" alt="" width="16" height="16" />Mistral AI</li>
+              <li><img src="assets/ia/openai.svg" alt="" width="16" height="16" />Codex</li>
+              <li><span class="tool-dot" aria-hidden="true"></span>OpenCode</li>
+              <li><span class="tool-dot" aria-hidden="true"></span>OpenClaw</li>
+              <li><span class="tool-dot" aria-hidden="true"></span>Hermes Agent</li>
+              <li><span class="tool-dot" aria-hidden="true"></span>Instinct</li>
               <li><img src="assets/ia/n8n.svg" alt="" width="16" height="16" />n8n &amp; Make</li>
+              <li><span class="tool-dot tool-dot-office" aria-hidden="true"></span>Word &amp; Excel</li>
+              <li><span class="tool-dot tool-dot-office" aria-hidden="true"></span>CapCut</li>
             </ul>
           </div>
         </div>
@@ -171,7 +178,7 @@
         </div>
         <div class="fact">
           <dt>Doctorat</dt>
-          <dd>En cours · UMNG &amp; IRSEN</dd>
+          <dd>En cours · UMNG, IRSEN &amp; IRA</dd>
         </div>
         <div class="fact">
           <dt>Publication</dt>
@@ -240,7 +247,7 @@
             <p class="cta-band-note">La mention « niveau expert » désigne la portée du parcours proposé. Elle ne constitue pas une certification officielle.</p>
           </div>
           <div class="cta-band-actions">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSetFTX6f4Kh8R5UTbJ2Zm1-r2BgspWQXeD_Ipt8B37kkQXX9Q/viewform" target="_blank" rel="noopener" class="btn btn-primary">Planifier une formation</a>
+            <a href="#formulaire" data-type="Formation à l'Intelligence Artificielle" class="btn btn-primary">Planifier une formation</a>
             <a href="https://wa.me/242065058034" target="_blank" rel="noopener" class="btn btn-ghost">Échanger sur vos besoins</a>
           </div>
         </div>
@@ -270,7 +277,7 @@
               <li>Prise en main guidée des outils récents d'IA générative</li>
               <li>Pour particuliers, indépendants, équipes et établissements</li>
             </ul>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSetFTX6f4Kh8R5UTbJ2Zm1-r2BgspWQXeD_Ipt8B37kkQXX9Q/viewform" target="_blank" rel="noopener" class="text-link">Planifier une session <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a href="#formulaire" data-type="Formation à l'Intelligence Artificielle" class="text-link">Planifier une session <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </article>
 
           <article class="card service reveal">
@@ -417,7 +424,17 @@
           <a href="verify/" class="text-link">Ouvrir l'outil de vérification des attestations <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </article>
 
-        <div class="grid-2 grid-gap-top">
+        <div class="grid-3 grid-gap-top">
+          <article class="card reveal">
+            <div class="card-top">
+              <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span>
+              <span class="tag">Site web</span>
+            </div>
+            <h3 class="card-title">Site de la JSB 2027</h3>
+            <p class="card-text">Création du site officiel de la 3<sup>e</sup> Journée des Sciences Biologiques (7 mars 2027) : inscriptions, candidatures au concours scientifique, badges et attestations vérifiables en ligne.</p>
+            <a href="https://l-ecole-ke-bien.web.app/" target="_blank" rel="noopener" class="text-link">Voir le site <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+
           <article class="card reveal">
             <div class="card-top">
               <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg></span>
@@ -452,18 +469,18 @@
             <span class="status">En cours</span>
           </div>
           <h3 class="thesis-title">
-            Évaluation du potentiel biotechnologique des rhizobactéries autochtones pour la résilience climatique des céréales et la bioremédiation des sols en République du Congo
+            Évaluation du potentiel biotechnologique des rhizobactéries autochtones pour la résilience climatique du maïs et des légumineuses et la bioremédiation des sols en République du Congo
           </h3>
           <p class="thesis-dir">
-            Directeur : <strong>Pr Aimé Christian KAYATH</strong>, Maître de conférences CAMES, Faculté des Sciences et Techniques, Université Marien Ngouabi
+            Directeur : <strong>Pr Aimé Christian KAYATH</strong>, Professeur titulaire, Faculté des Sciences et Techniques, Université Marien Ngouabi
           </p>
           <p class="thesis-affil">
-            Rattachement : Institut National de Recherche en Sciences Exactes et Naturelles (IRSEN, Cité scientifique) et Institut de Recherche Agronomique (IRA)
+            Rattachement : Institut National de Recherche en Sciences Exactes et Naturelles (IRSEN, Cité scientifique) et Institut National de Recherche Agronomique (IRA, Laboratoire de bromatologie et des technologies agroalimentaires)
           </p>
 
           <ol class="thesis-axes">
             <li>Isolement et caractérisation de rhizobactéries promotrices de croissance végétale (PGPR) adaptées aux sols congolais</li>
-            <li>Effet des souches sur la croissance et la tolérance au stress hydrique des céréales locales (maïs, riz)</li>
+            <li>Effet des souches sur la croissance et la tolérance au stress hydrique du maïs et des légumineuses</li>
             <li>Traits biochimiques : solubilisation du phosphate, fixation d'azote, AIA, ACC désaminase et sidérophores</li>
             <li>Perspectives de bioremédiation des sols pour une agriculture résiliente</li>
           </ol>
@@ -511,6 +528,12 @@
                 <p class="tl-desc">Conception et animation de formations pour tous profils : prompt engineering, intégration des outils d'IA dans le travail, agents autonomes et automatisations.</p>
               </li>
               <li class="tl-item reveal">
+                <span class="tl-date">Depuis 2026</span>
+                <h4 class="tl-title">Formateur professionnel en techniques de laboratoire</h4>
+                <p class="tl-org">Institut LAËL, école professionnelle de Brazzaville</p>
+                <p class="tl-desc">Cours auprès des étudiants de BTS Analyses médicales (1<sup>re</sup> et 2<sup>e</sup> années) : gestion et sécurité du laboratoire, techniques et examens de laboratoire (bactériologie, parasitologie, virologie).</p>
+              </li>
+              <li class="tl-item reveal">
                 <span class="tl-date">En cours</span>
                 <h4 class="tl-title">Chercheur doctorant</h4>
                 <p class="tl-org">IRSEN, Cité scientifique (ex-ORSTOM), Brazzaville</p>
@@ -519,14 +542,20 @@
               <li class="tl-item reveal">
                 <span class="tl-date">En cours</span>
                 <h4 class="tl-title">Chercheur associé doctorant</h4>
-                <p class="tl-org">IRA, Institut de Recherche Agronomique, Brazzaville</p>
-                <p class="tl-desc">Expérimentations agronomiques, perspectives de bioremédiation des sols et évaluation d'inoculants microbiens sur céréales.</p>
+                <p class="tl-org">IRA, Institut National de Recherche Agronomique, Brazzaville</p>
+                <p class="tl-desc">Expérimentations agronomiques, perspectives de bioremédiation des sols et évaluation d'inoculants microbiens sur le maïs et les légumineuses.</p>
               </li>
               <li class="tl-item reveal">
                 <span class="tl-date">En cours</span>
                 <h4 class="tl-title">Encadrant académique (TD &amp; TP)</h4>
                 <p class="tl-org">Faculté des Sciences et Techniques, Université Marien Ngouabi</p>
-                <p class="tl-desc">Travaux dirigés en sciences biologiques, accompagnement d'étudiants de licence et de master, appui à l'analyse de données expérimentales (Excel, GraphPad Prism).</p>
+                <p class="tl-desc">Travaux dirigés auprès de plus de 30 étudiants de licence, supervision de mémoires de master, appui à l'analyse de données expérimentales (Excel, GraphPad Prism).</p>
+              </li>
+              <li class="tl-item reveal">
+                <span class="tl-date">2023 à 2025</span>
+                <h4 class="tl-title">Superviseur de laboratoire (intérim)</h4>
+                <p class="tl-org">Université Marien Ngouabi</p>
+                <p class="tl-desc">Supervision des travaux pratiques de biochimie et de biologie moléculaire, gestion de la sécurité, de l'équipement et des réactifs.</p>
               </li>
               <li class="tl-item reveal">
                 <span class="tl-date">Plus de 4 ans</span>
@@ -565,12 +594,12 @@
               </li>
               <li class="degree reveal">
                 <span class="degree-year">2025</span>
-                <h4>Master en biochimie &amp; biologie moléculaire</h4>
+                <h4>Master en biochimie &amp; microbiologie</h4>
                 <p>Université Marien Ngouabi</p>
               </li>
               <li class="degree reveal">
                 <span class="degree-year">2022</span>
-                <h4>Licence en biochimie</h4>
+                <h4>Licence en biologie cellulaire &amp; moléculaire</h4>
                 <p>Université Marien Ngouabi</p>
               </li>
               <li class="degree reveal">
@@ -593,7 +622,6 @@
             <div class="languages reveal">
               <h3 class="sub-title">Langues</h3>
               <p><strong>Français</strong> · langue maternelle</p>
-              <p><strong>Anglais</strong> · niveau B2 professionnel</p>
             </div>
           </div>
         </div>
@@ -646,6 +674,8 @@
           <div class="card skill reveal">
             <h3 class="skill-title"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg>Enseignement &amp; pédagogie</h3>
             <ul class="list list-compact">
+              <li>Formation professionnelle en BTS Analyses médicales (Institut LAËL)</li>
+              <li>Gestion et sécurité du laboratoire, examens de laboratoire</li>
               <li>Enseignement des SVT au collège et au lycée</li>
               <li>Travaux dirigés universitaires (FST)</li>
               <li>Relecture méthodologique de mémoires</li>
@@ -709,9 +739,77 @@
           </a>
         </div>
 
-        <div class="contact-actions reveal">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSetFTX6f4Kh8R5UTbJ2Zm1-r2BgspWQXeD_Ipt8B37kkQXX9Q/viewform" target="_blank" rel="noopener" class="btn btn-light">Remplir le formulaire de formation</a>
-        </div>
+        <form class="contact-form card reveal" id="formulaire" novalidate>
+          <div class="form-head">
+            <h3 class="card-title">Envoyer une demande</h3>
+            <p class="form-note">Réponse sous 48 h. Les champs marqués * sont obligatoires.</p>
+          </div>
+          <div class="form-grid">
+            <label class="field">
+              <span>Nom complet *</span>
+              <input type="text" name="entry.806358779" autocomplete="name" required />
+            </label>
+            <label class="field">
+              <span>E-mail *</span>
+              <input type="email" name="entry.212823614" autocomplete="email" required />
+            </label>
+            <label class="field">
+              <span>Téléphone / WhatsApp</span>
+              <input type="tel" name="entry.1453591353" autocomplete="tel" />
+            </label>
+            <label class="field">
+              <span>Type de demande *</span>
+              <select name="entry.372052994" id="formType" required>
+                <option value="">Choisir…</option>
+                <option>Formation à l'Intelligence Artificielle</option>
+                <option>Accompagnement rédaction thèse / mémoire / présentation</option>
+                <option>Formation aux outils numériques &amp; de recherche</option>
+                <option>Conseil en recherche &amp; analyse (biochimie/microbiologie)</option>
+                <option>Cours particuliers / Soutien scolaire (SVT, biochimie, microbiologie)</option>
+                <option>Création de contenu (vidéo, musique, vulgarisation scientifique)</option>
+                <option>Support IT &amp; Cloud</option>
+                <option>Autre</option>
+              </select>
+            </label>
+            <label class="field field-full">
+              <span>Décrivez votre besoin *</span>
+              <textarea name="entry.335678309" rows="5" required></textarea>
+            </label>
+            <label class="field">
+              <span>Délai souhaité</span>
+              <select name="entry.1560219871">
+                <option value="">Choisir…</option>
+                <option>Urgent</option>
+                <option>Sous 2 semaines</option>
+                <option>Pas pressé</option>
+                <option>Date précise (à préciser dans le champ précédent)</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Comment avez-vous connu mon profil ?</span>
+              <select name="entry.335288467">
+                <option value="">Choisir…</option>
+                <option>LinkedIn</option>
+                <option selected>Portfolio / site web</option>
+                <option>Recommandation</option>
+                <option>Réseaux sociaux (Instagram/YouTube/TikTok)</option>
+                <option>Autre</option>
+              </select>
+            </label>
+            <fieldset class="field field-full">
+              <legend>Moyen de contact préféré *</legend>
+              <div class="radios">
+                <label><input type="radio" name="entry.1523619958" value="Email" required /> E-mail</label>
+                <label><input type="radio" name="entry.1523619958" value="WhatsApp" /> WhatsApp</label>
+                <label><input type="radio" name="entry.1523619958" value="Téléphone" /> Téléphone</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form-foot">
+            <button type="submit" class="btn btn-primary" id="formSubmit">Envoyer la demande</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </div>
+        </form>
       </div>
     </section>
   </main>
@@ -739,16 +837,16 @@
         <section class="cv-section">
           <h2 class="cv-h2">Profil</h2>
           <p class="cv-profile">
-            Formateur en intelligence artificielle et doctorant-chercheur en biochimie et microbiologie appliquée à l'Université Marien Ngouabi (IRSEN, IRA). Conçoit et anime des formations pratiques en IA pour tous publics, de l'initiation aux agents autonomes. Développe des projets de création de contenus assistés par IA (Le Raconteur) et une marque de mode en construction (Mwa Sape). Titulaire d'un master en biochimie et biologie moléculaire, co-auteur d'une publication dans l'International Journal of Microbiology (2025).
+            Formateur en intelligence artificielle et doctorant-chercheur en biochimie et microbiologie appliquée à l'Université Marien Ngouabi (IRSEN, IRA). Conçoit et anime des formations pratiques en IA pour tous publics, de l'initiation aux agents autonomes. Développe des projets de création de contenus assistés par IA (Le Raconteur) et une marque de mode en construction (Mwa Sape). Titulaire d'un master en biochimie et microbiologie, co-auteur d'une publication dans l'International Journal of Microbiology (2025).
           </p>
         </section>
 
         <section class="cv-section">
           <h2 class="cv-h2">Recherche doctorale en cours</h2>
           <p class="cv-thesis-title">
-            Évaluation du potentiel biotechnologique des rhizobactéries autochtones pour la résilience climatique des céréales et la bioremédiation des sols en République du Congo
+            Évaluation du potentiel biotechnologique des rhizobactéries autochtones pour la résilience climatique du maïs et des légumineuses et la bioremédiation des sols en République du Congo
           </p>
-          <p class="cv-meta-line">Direction : Pr Aimé Christian KAYATH (CAMES) · UMNG, IRSEN, IRA</p>
+          <p class="cv-meta-line">Direction : Pr Aimé Christian KAYATH · UMNG, IRSEN, IRA</p>
         </section>
 
         <section class="cv-section">
@@ -759,19 +857,29 @@
             <p>Formations pour tous profils : prompt engineering, intégration des outils d'IA dans le travail, agents autonomes et automatisations.</p>
           </div>
           <div class="cv-item">
+            <div class="cv-item-head"><strong>Formateur professionnel en techniques de laboratoire</strong><span>Depuis 2026</span></div>
+            <p class="cv-item-org">Institut LAËL, école professionnelle de Brazzaville</p>
+            <p>BTS Analyses médicales (1re et 2e années) : gestion et sécurité du laboratoire, bactériologie, parasitologie, virologie.</p>
+          </div>
+          <div class="cv-item">
             <div class="cv-item-head"><strong>Chercheur doctorant</strong><span>En cours</span></div>
             <p class="cv-item-org">IRSEN, Cité scientifique (ex-ORSTOM), Brazzaville</p>
             <p>Analyses biochimiques, culture microbienne, biologie moléculaire (PCR, qPCR, électrophorèse), caractérisation de rhizobactéries.</p>
           </div>
           <div class="cv-item">
             <div class="cv-item-head"><strong>Chercheur associé doctorant</strong><span>En cours</span></div>
-            <p class="cv-item-org">Institut de Recherche Agronomique (IRA), Brazzaville</p>
-            <p>Expérimentations agronomiques, perspectives de bioremédiation des sols, inoculants microbiens sur céréales.</p>
+            <p class="cv-item-org">Institut National de Recherche Agronomique (IRA), Brazzaville</p>
+            <p>Expérimentations agronomiques, perspectives de bioremédiation des sols, inoculants microbiens sur le maïs et les légumineuses.</p>
           </div>
           <div class="cv-item">
             <div class="cv-item-head"><strong>Encadrant académique (TD &amp; TP)</strong><span>En cours</span></div>
             <p class="cv-item-org">Faculté des Sciences et Techniques, Université Marien Ngouabi</p>
             <p>Travaux dirigés en sciences biologiques, accompagnement d'étudiants de licence et de master, traitement de données expérimentales.</p>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-head"><strong>Superviseur de laboratoire (intérim)</strong><span>2023 à 2025</span></div>
+            <p class="cv-item-org">Université Marien Ngouabi</p>
+            <p>Travaux pratiques de biochimie et biologie moléculaire, sécurité, équipement et réactifs.</p>
           </div>
           <div class="cv-item">
             <div class="cv-item-head"><strong>Enseignant de SVT</strong><span>Plus de 4 ans</span></div>
@@ -796,11 +904,11 @@
             <p class="cv-item-org">Université Marien Ngouabi</p>
           </div>
           <div class="cv-item">
-            <div class="cv-item-head"><strong>Master en biochimie &amp; biologie moléculaire</strong><span>2025</span></div>
+            <div class="cv-item-head"><strong>Master en biochimie &amp; microbiologie</strong><span>2025</span></div>
             <p class="cv-item-org">Université Marien Ngouabi</p>
           </div>
           <div class="cv-item">
-            <div class="cv-item-head"><strong>Licence en biochimie</strong><span>2022</span></div>
+            <div class="cv-item-head"><strong>Licence en biologie cellulaire &amp; moléculaire</strong><span>2022</span></div>
             <p class="cv-item-org">Université Marien Ngouabi</p>
           </div>
           <div class="cv-item">
@@ -839,7 +947,7 @@
             <p><strong>Le Raconteur :</strong> storytelling et vidéos assistés par IA.</p>
             <p><strong>Mwa Sape :</strong> marque de mode en construction.</p>
             <p><strong>JSB 2026 :</strong> automatisation des inscriptions, badges et attestations.</p>
-            <p><strong>Français :</strong> langue maternelle. <strong>Anglais :</strong> B2 professionnel.</p>
+            <p><strong>Français :</strong> langue maternelle.</p>
           </div>
         </section>
       </div>
@@ -857,6 +965,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=3.0" defer></script>
+  <script src="script.js?v=3.1" defer></script>
 </body>
 </html>

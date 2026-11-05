@@ -80,7 +80,55 @@
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ---------- 6. CV en PDF (impression) ---------- */
+  /* ---------- 6. Formulaire de contact (envoi vers Google Forms + Sheet) ---------- */
+  const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSetFTX6f4Kh8R5UTbJ2Zm1-r2BgspWQXeD_Ipt8B37kkQXX9Q/formResponse';
+  const form = document.getElementById('formulaire');
+  const formType = document.getElementById('formType');
+
+  // Les boutons « Planifier une formation » pré-remplissent le type de demande
+  document.querySelectorAll('a[data-type]').forEach((a) => {
+    a.addEventListener('click', () => { if (formType) formType.value = a.dataset.type; });
+  });
+
+  if (form) {
+    const status = document.getElementById('formStatus');
+    const submit = document.getElementById('formSubmit');
+    const setStatus = (msg, cls) => { status.textContent = msg; status.className = 'form-status ' + (cls || ''); };
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      let firstBad = null;
+      form.querySelectorAll('[required]').forEach((el) => {
+        const bad = el.type === 'radio'
+          ? !form.querySelector('input[name="' + el.name + '"]:checked')
+          : !el.value.trim() || (el.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value));
+        el.classList.toggle('invalid', bad);
+        if (bad && !firstBad) firstBad = el;
+      });
+      if (firstBad) {
+        setStatus('Merci de remplir les champs obligatoires.', 'err');
+        firstBad.focus();
+        return;
+      }
+
+      submit.disabled = true;
+      setStatus('Envoi en cours…');
+      const data = new URLSearchParams(new FormData(form));
+      fetch(FORM_URL, { method: 'POST', mode: 'no-cors', body: data })
+        .then(() => {
+          form.reset();
+          setStatus('Merci, votre demande a bien été envoyée. Réponse sous 48 h.', 'ok');
+        })
+        .catch(() => {
+          setStatus('L\'envoi a échoué. Écrivez-moi sur WhatsApp ou par e-mail.', 'err');
+        })
+        .finally(() => { submit.disabled = false; });
+    });
+
+    form.addEventListener('input', (e) => e.target.classList.remove('invalid'));
+  }
+
+  /* ---------- 7. CV en PDF (impression) ---------- */
   const cvBtn = document.getElementById('downloadCv');
   if (cvBtn) cvBtn.addEventListener('click', () => window.print());
 })();
