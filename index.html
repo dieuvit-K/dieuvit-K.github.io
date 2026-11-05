@@ -59,7 +59,7 @@
   </script>
 
   <script>document.documentElement.classList.add('js');</script>
-  <link rel="stylesheet" href="styles.css?v=5.1" />
+  <link rel="stylesheet" href="styles.css?v=5.2" />
 </head>
 <body>
 
@@ -134,7 +134,7 @@
           </p>
 
           <div class="hero-actions reveal">
-            <a href="#formulaire" data-type="Formation à l'Intelligence Artificielle" class="btn btn-primary">Planifier une formation</a>
+            <a href="#formulaire" data-type="Formation en intelligence artificielle" class="btn btn-primary">Planifier une formation</a>
             <a href="https://wa.me/242065058034" target="_blank" rel="noopener" class="btn btn-ghost">Discuter d'un projet</a>
             <button type="button" id="downloadCv" class="btn btn-link">
               <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
@@ -247,7 +247,7 @@
             <p class="cta-band-note">La mention « niveau expert » désigne la portée du parcours proposé. Elle ne constitue pas une certification officielle.</p>
           </div>
           <div class="cta-band-actions">
-            <a href="#formulaire" data-type="Formation à l'Intelligence Artificielle" class="btn btn-primary">Planifier une formation</a>
+            <a href="#formulaire" data-type="Formation en intelligence artificielle" class="btn btn-primary">Planifier une formation</a>
             <a href="https://wa.me/242065058034" target="_blank" rel="noopener" class="btn btn-ghost">Échanger sur vos besoins</a>
           </div>
         </div>
@@ -277,7 +277,7 @@
               <li>Prise en main guidée des outils récents d'IA générative</li>
               <li>Pour particuliers, indépendants, équipes et établissements</li>
             </ul>
-            <a href="#formulaire" data-type="Formation à l'Intelligence Artificielle" class="text-link">Planifier une session <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a href="#formulaire" data-type="Formation en intelligence artificielle" class="text-link">Planifier une session <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </article>
 
           <article class="card service reveal">
@@ -292,7 +292,7 @@
               <li>Choix des solutions d'IA adaptées à vos objectifs réels</li>
               <li>Accompagnement pragmatique, orienté vers l'efficacité quotidienne</li>
             </ul>
-            <a href="https://wa.me/242065058034" target="_blank" rel="noopener" class="text-link">Discuter d'un projet <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a href="#formulaire" data-type="Mise en place d'agents IA et d'automatisations" class="text-link">Discuter d'un projet <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </article>
 
           <article class="card service reveal">
@@ -307,7 +307,7 @@
               <li>CV intégré, prêt pour l'impression ou l'export PDF</li>
               <li>Livraison clé en main, hébergement statique économique</li>
             </ul>
-            <a href="https://wa.me/242065058034" target="_blank" rel="noopener" class="text-link">Créer votre portfolio <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a href="#formulaire" data-type="Création de portfolio ou de site vitrine" class="text-link">Créer votre portfolio <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </article>
 
           <article class="card service reveal">
@@ -322,7 +322,7 @@
               <li>Relecture méthodologique de mémoires, thèses et articles</li>
               <li>Préparation aux présentations et soutenances</li>
             </ul>
-            <a href="https://wa.me/242065058034" target="_blank" rel="noopener" class="text-link">Échanger sur une étude <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a href="#formulaire" data-type="Conseil en recherche, thèse ou mémoire" class="text-link">Échanger sur une étude <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </article>
         </div>
       </div>
@@ -349,6 +349,7 @@
             </ul>
             <div class="link-row">
               <a href="https://www.tiktok.com/@leraconteur242" target="_blank" rel="noopener" class="chip-link">TikTok · @leraconteur242 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a href="#formulaire" data-type="Publicité sur la page TikTok Le Raconteur" class="chip-link">Faire de la publicité <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </div>
           </article>
 
@@ -758,22 +759,30 @@
               <input type="tel" name="entry.1453591353" autocomplete="tel" />
             </label>
             <label class="field">
-              <span>Type de demande *</span>
+              <span>Service souhaité *</span>
               <select name="entry.372052994" id="formType" required>
-                <option value="">Choisir…</option>
-                <option>Formation à l'Intelligence Artificielle</option>
-                <option>Accompagnement rédaction thèse / mémoire / présentation</option>
-                <option>Formation aux outils numériques &amp; de recherche</option>
-                <option>Conseil en recherche &amp; analyse (biochimie/microbiologie)</option>
-                <option>Cours particuliers / Soutien scolaire (SVT, biochimie, microbiologie)</option>
-                <option>Création de contenu (vidéo, musique, vulgarisation scientifique)</option>
-                <option>Support IT &amp; Cloud</option>
-                <option>Autre</option>
+                <option value="">Choisir un service…</option>
+                <optgroup label="Intelligence artificielle">
+                  <option>Formation en intelligence artificielle</option>
+                  <option>Mise en place d'agents IA et d'automatisations</option>
+                  <option>Formation à la création de vidéos avec l'IA</option>
+                </optgroup>
+                <optgroup label="Contenus &amp; web">
+                  <option>Réalisation de vidéos ou de publicités</option>
+                  <option>Publicité sur la page TikTok Le Raconteur</option>
+                  <option>Création de portfolio ou de site vitrine</option>
+                </optgroup>
+                <optgroup label="Recherche &amp; enseignement">
+                  <option>Conseil en recherche, thèse ou mémoire</option>
+                  <option>Cours de SVT ou soutien scolaire</option>
+                </optgroup>
+                <option>Autre demande</option>
               </select>
             </label>
             <label class="field field-full">
               <span>Décrivez votre besoin *</span>
-              <textarea name="entry.335678309" rows="5" required></textarea>
+              <textarea name="entry.335678309" id="formNeed" rows="5" required placeholder="Expliquez votre besoin en quelques lignes."></textarea>
+              <small class="field-hint" id="formHint">Choisissez un service pour voir quoi préciser.</small>
             </label>
             <label class="field">
               <span>Délai souhaité</span>
@@ -965,6 +974,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=3.1" defer></script>
+  <script src="script.js?v=3.2" defer></script>
 </body>
 </html>
