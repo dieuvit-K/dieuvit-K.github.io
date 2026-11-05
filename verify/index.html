@@ -3,185 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vérification Certificat — JSB 2026</title>
+  <meta name="robots" content="noindex">
+  <title>Vérification d'attestation · JSB 2026</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <style>
+    @font-face { font-family: 'Inter'; font-weight: 400; font-display: swap; src: url('../assets/fonts/inter-400.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-weight: 600; font-display: swap; src: url('../assets/fonts/inter-600.woff2') format('woff2'); }
+    @font-face { font-family: 'Cormorant Garamond'; font-weight: 600; font-display: swap; src: url('../assets/fonts/cormorant-600.woff2') format('woff2'); }
+    :root {
+      --paper: #F7F3EA; --card: #FFFDF8; --ink: #221A13; --ink-2: #54463A; --ink-3: #7D6B5A;
+      --accent: #8A5722; --line: rgba(34, 26, 19, 0.11);
+      --ok: #2F6B45; --ok-soft: #E6F0E8; --ko: #A3322B; --ko-soft: #F8E5E2;
+    }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      background: #f5f0eb;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
+      font-family: 'Inter', system-ui, sans-serif; background: var(--paper); color: var(--ink);
+      min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: 24px 16px; line-height: 1.55;
     }
     .card {
-      background: white;
-      border-radius: 16px;
-      padding: 40px;
-      max-width: 500px;
-      width: 100%;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-      text-align: center;
+      background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+      padding: 36px 32px; max-width: 520px; width: 100%; text-align: center;
+      box-shadow: 0 2px 4px rgba(34,26,19,.05), 0 12px 32px rgba(34,26,19,.09);
     }
-    .seal {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 20px;
-      font-size: 40px;
-    }
-    .valid .seal { background: #e8f5e9; }
-    .invalid .seal { background: #ffebee; }
-    .loading .seal { background: #f5f5f5; animation: pulse 1.5s infinite; }
-    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
-    h1 { font-size: 24px; color: #1a1a2e; margin-bottom: 8px; }
-    .subtitle { color: #666; font-size: 14px; margin-bottom: 24px; }
-    .info { text-align: left; margin: 20px 0; }
-    .info-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee; }
-    .info-row:last-child { border: none; }
-    .label { color: #888; font-size: 13px; }
-    .value { font-weight: 600; color: #1a1a2e; font-size: 14px; }
-    .status-badge {
-      display: inline-block;
-      padding: 8px 20px;
-      border-radius: 20px;
-      font-weight: 700;
-      font-size: 14px;
-      margin: 16px 0;
-    }
-    .valid .status-badge { background: #e8f5e9; color: #2e7d32; }
-    .invalid .status-badge { background: #ffebee; color: #c62828; }
-    .badge-cert { 
-      display: inline-block;
-      padding: 4px 16px;
-      border-radius: 12px;
-      font-size: 12px;
-      font-weight: 600;
-    }
-    .badge-participant { background: #e3f2fd; color: #1565c0; }
-    .badge-challenger { background: #fff3e0; color: #e65100; }
-    .badge-organisation { background: #e8f5e9; color: #2e7d32; }
-    .footer { margin-top: 24px; font-size: 12px; color: #aaa; }
-    .error { color: #c62828; }
-    a { color: #1565c0; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; }
+    .seal { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; margin: 0 auto 18px; background: #EFE8DA; color: var(--ink-3); }
+    .seal svg { width: 30px; height: 30px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .valid .seal { background: var(--ok-soft); color: var(--ok); }
+    .invalid .seal { background: var(--ko-soft); color: var(--ko); }
+    .loading .seal { animation: pulse 1.4s ease-in-out infinite; }
+    @keyframes pulse { 50% { opacity: .5; } }
+    h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 30px; font-weight: 600; line-height: 1.15; margin-bottom: 8px; }
+    .subtitle { color: var(--ink-2); font-size: 15px; margin-bottom: 8px; }
+    .status { display: inline-block; margin: 12px 0 4px; padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+    .valid .status { background: var(--ok-soft); color: var(--ok); }
+    .invalid .status { background: var(--ko-soft); color: var(--ko); }
+    .info { text-align: left; margin: 22px 0 18px; border-top: 1px solid var(--line); }
+    .row { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .label { color: var(--ink-3); font-size: 13.5px; }
+    .value { font-weight: 600; font-size: 14.5px; text-align: right; }
+    .mono { font-family: ui-monospace, Consolas, monospace; font-size: 13px; }
+    .org { font-size: 13.5px; color: var(--ink-3); }
+    .org strong { color: var(--ink-2); }
+    code { font-family: ui-monospace, Consolas, monospace; background: #EFE8DA; padding: 1px 6px; border-radius: 4px; }
+    .back { margin-top: 22px; font-size: 14px; color: var(--ink-3); }
+    .back a { color: var(--accent); font-weight: 600; text-decoration: none; }
+    .back a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <div class="card loading" id="card">
-    <div class="seal">🔍</div>
-    <h1>Vérification du certificat</h1>
-    <p class="subtitle">Vérification en cours...</p>
-  </div>
+  <main class="card loading" id="card" aria-live="polite">
+    <p class="eyebrow">JSB 2026 · Vérification</p>
+    <div class="seal"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+    <h1>Vérification de l'attestation</h1>
+    <p class="subtitle">Vérification en cours…</p>
+  </main>
+  <p class="back"><a href="../">Retour au portfolio de Dieuvit Kibamba</a></p>
 
   <script>
-    const params = new URLSearchParams(window.location.search);
-    const certId = params.get('id');
+    (function () {
+      'use strict';
 
-    async function verify() {
-      const card = document.getElementById('card');
-      
+      var EVENT = 'Journée des Sciences Biologiques 2026 (2ᵉ édition)';
+      var ORG = 'Organisée par <strong>Pr Aimé Christian KAYATH</strong><br>Faculté des Sciences et Techniques, Université Marien Ngouabi';
+      var ICON_OK = '<svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>';
+      var ICON_KO = '<svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>';
+      var ICON_Q = '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 015 .5c0 1.7-2.5 2-2.5 3.5M12 17h.01"/></svg>';
+
+      // Échappe tout texte venant de l'URL ou des données avant affichage
+      function esc(v) {
+        return String(v == null ? '' : v).replace(/[&<>"']/g, function (c) {
+          return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+        });
+      }
+
+      var card = document.getElementById('card');
+      var certId = (new URLSearchParams(window.location.search).get('id') || '').trim();
+
+      function show(state, html) {
+        card.className = 'card ' + state;
+        card.innerHTML = '<p class="eyebrow">JSB 2026 · Vérification</p>' + html;
+      }
+
       if (!certId) {
-        card.className = 'card invalid';
-        card.innerHTML = `
-          <div class="seal">❓</div>
-          <h1>Aucun ID fourni</h1>
-          <p class="subtitle">Scannez le QR code complet sur votre certificat.</p>
-          <p class="subtitle">L'URL doit contenir <code>?id=XXXXX</code></p>
-          <div class="footer">
-            2ᵉ Édition — Journée des Sciences Biologiques 2026
-          </div>
-        `;
+        show('invalid',
+          '<div class="seal">' + ICON_Q + '</div>' +
+          '<h1>Aucun identifiant fourni</h1>' +
+          '<p class="subtitle">Scannez le QR code complet imprimé sur votre attestation.</p>' +
+          '<p class="subtitle">L\'adresse doit contenir <code>?id=…</code></p>');
         return;
       }
 
-      try {
-        const resp = await fetch('certificats_data.json');
-        const data = await resp.json();
-        const cert = data.certificats[certId];
+      fetch('certificats_data.json', { cache: 'no-cache' })
+        .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(function (data) {
+          var cert = data && data.certificats ? data.certificats[certId] : null;
 
-        if (!cert || !cert.valide) {
-          card.className = 'card invalid';
-          card.innerHTML = `
-            <div class="seal">❌</div>
-            <h1>Certificat non trouvé</h1>
-            <p class="subtitle">Ce certificat semble invalide ou inconnu.</p>
-            <div class="status-badge">⚠️ NON AUTHENTIQUE</div>
-            <p class="error">ID: ${certId}</p>
-            <div class="footer">
-              Contactez le Comité d'Organisation si vous pensez qu'il s'agit d'une erreur.
-            </div>
-          `;
-          return;
-        }
+          if (!cert || cert.valide !== true) {
+            show('invalid',
+              '<div class="seal">' + ICON_KO + '</div>' +
+              '<h1>Attestation introuvable</h1>' +
+              '<p class="subtitle">Cet identifiant ne correspond à aucune attestation enregistrée.</p>' +
+              '<span class="status">Non authentifiée</span>' +
+              '<div class="info"><div class="row"><span class="label">Identifiant</span><span class="value mono">' + esc(certId) + '</span></div></div>' +
+              '<p class="org">En cas d\'erreur, contactez le comité d\'organisation.</p>');
+            return;
+          }
 
-        const badgeClass = {
-          'participant': 'badge-participant',
-          'challenger': 'badge-challenger',
-          'organisation': 'badge-organisation'
-        }[cert.type] || '';
-
-        const typeLabels = {
-          'participant': 'Participant',
-          'challenger': 'Challenger',
-          'organisation': 'Organisation'
-        };
-
-        card.className = 'card valid';
-        card.innerHTML = `
-          <div class="seal">✅</div>
-          <h1>Certificat Authentique</h1>
-          <p class="subtitle">Ce certificat est valide et enregistré officiellement.</p>
-          <div class="status-badge">✅ CERTIFICAT VALIDE</div>
-          <div class="badge-cert ${badgeClass}">${typeLabels[cert.type] || cert.type}</div>
-          <div class="info">
-            <div class="info-row">
-              <span class="label">Bénéficiaire</span>
-              <span class="value">${cert.nom}</span>
-            </div>
-            <div class="info-row">
-              <span class="label">Événement</span>
-              <span class="value">${cert.evenement}</span>
-            </div>
-            <div class="info-row">
-              <span class="label">Date</span>
-              <span class="value">${cert.date}</span>
-            </div>
-            <div class="info-row">
-              <span class="label">Lieu</span>
-              <span class="value">${cert.lieu}</span>
-            </div>
-            <div class="info-row">
-              <span class="label">ID Certificat</span>
-              <span class="value" style="font-family:monospace;font-size:12px;">${certId}</span>
-            </div>
-          </div>
-          <p class="subtitle">
-            Organisé par <strong>Pr Aimé Christian KAYATH</strong><br>
-            <span style="font-size:12px;">Université Marien NGOUABI — Faculté des Sciences et Techniques</span>
-          </p>
-          <div class="footer">
-            2ᵉ Édition — Journée des Sciences Biologiques 2026
-          </div>
-        `;
-      } catch(e) {
-        card.className = 'card invalid';
-        card.innerHTML = `
-          <div class="seal">⚠️</div>
-          <h1>Erreur de vérification</h1>
-          <p class="subtitle">Impossible de charger les données de vérification.</p>
-          <p class="error">${e.message}</p>
-          <div class="footer">
-            Réessayez plus tard ou contactez le Comité d'Organisation.
-          </div>
-        `;
-      }
-    }
-    verify();
+          var date = cert.date ? String(cert.date).toLowerCase() : '12 juillet 2026';
+          show('valid',
+            '<div class="seal">' + ICON_OK + '</div>' +
+            '<h1>Attestation authentique</h1>' +
+            '<p class="subtitle">Cette attestation est valide et enregistrée.</p>' +
+            '<span class="status">' + esc(cert.type_label || 'Attestation') + '</span>' +
+            '<div class="info">' +
+              '<div class="row"><span class="label">Bénéficiaire</span><span class="value">' + esc(cert.nom) + '</span></div>' +
+              '<div class="row"><span class="label">Événement</span><span class="value">' + EVENT + '</span></div>' +
+              '<div class="row"><span class="label">Date</span><span class="value">' + esc(date) + '</span></div>' +
+              '<div class="row"><span class="label">Lieu</span><span class="value">' + esc(cert.lieu || 'FST Brazzaville') + '</span></div>' +
+              '<div class="row"><span class="label">Identifiant</span><span class="value mono">' + esc(certId) + '</span></div>' +
+            '</div>' +
+            '<p class="org">' + ORG + '</p>');
+        })
+        .catch(function () {
+          show('invalid',
+            '<div class="seal">' + ICON_Q + '</div>' +
+            '<h1>Vérification impossible</h1>' +
+            '<p class="subtitle">Les données de vérification n\'ont pas pu être chargées. Réessayez dans quelques instants.</p>');
+        });
+    })();
   </script>
 </body>
 </html>
