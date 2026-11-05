@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://dieuvit-k.github.io/dieuvit.github.io/sitemap.xml
+Sitemap: https://dieuvit-k.github.io/sitemap.xml
