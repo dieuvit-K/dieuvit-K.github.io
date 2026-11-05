@@ -122,21 +122,22 @@ ul, ol { list-style: none; }
 /* ------------------ Header : Capsule Papier & Laiton ------------------ */
 .site-header {
   position: fixed;
-  top: 16px;
+  top: 14px;
   left: 0;
   right: 0;
   z-index: 100;
   pointer-events: none;
-  padding: 0 24px;
+  padding: 0 16px;
 }
 .nav-wrapper {
-  max-width: 1160px;
+  width: fit-content;
+  max-width: calc(100% - 24px);
   margin: 0 auto;
-  padding: 8px 14px 8px 20px;
+  padding: 6px 14px 6px 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 14px;
   pointer-events: auto;
   background: rgba(245, 238, 219, 0.94);
   backdrop-filter: blur(16px);
@@ -152,33 +153,33 @@ ul, ol { list-style: none; }
   border-color: var(--sepia);
 }
 
-.brand { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.brand { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
 .brand-mark {
   font-family: var(--display);
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   color: var(--sepia);
   line-height: 1;
 }
 .brand-name {
   font-family: var(--sans);
-  font-size: 15px;
+  font-size: 13.5px;
   font-weight: 600;
-  letter-spacing: .01em;
+  letter-spacing: .02em;
   color: var(--text-main);
   white-space: nowrap;
 }
 
-.nav { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.nav { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-family: var(--sans);
-  font-size: 12.5px;
+  font-size: 11.5px;
   font-weight: 600;
-  letter-spacing: .05em;
+  letter-spacing: .04em;
   text-transform: uppercase;
   color: var(--text-muted);
   position: relative;
-  padding: 6px 10px;
+  padding: 5px 8px;
   border-radius: 9999px;
   white-space: nowrap;
   transition: all .3s ease;
@@ -196,11 +197,12 @@ ul, ol { list-style: none; }
 .nav-cta {
   border: 1.5px solid var(--sepia);
   background: rgba(223, 200, 165, 0.5);
-  padding: 7px 18px !important;
+  padding: 5px 15px !important;
+  margin-left: 4px;
   color: var(--text-main);
   border-radius: 9999px;
   font-weight: 700;
-  font-size: 12.5px;
+  font-size: 11.5px;
   transition: all .3s ease;
   box-shadow: 0 2px 6px rgba(40, 27, 18, 0.10);
 }
@@ -548,9 +550,75 @@ ul, ol { list-style: none; }
   filter: drop-shadow(4px 8px 16px rgba(40, 27, 18, 0.25));
   pointer-events: none;
 }
+.watch-caption {
+  display: block;
+  text-align: center;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-top: 4px;
+}
 @media (max-width: 992px) {
   .scrapbook-pocket-watch { display: none; }
   .scrapbook-books-stack { display: none; }
+}
+
+/* ------------------ Bandeau Écosystème & Modèles IA ------------------ */
+.ai-ecosystem-strip {
+  margin: 28px 0 32px;
+  position: relative;
+}
+.ai-ecosystem-label {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ai-ecosystem-label::after {
+  content: '';
+  flex: 1;
+  max-width: 140px;
+  height: 1px;
+  border-bottom: 1px dashed var(--border-stitch);
+}
+.ai-badges-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.ai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #FAF6ED;
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  padding: 6px 14px 6px 10px;
+  box-shadow: 0 1px 3px rgba(40, 27, 18, 0.06);
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-main);
+  transition: all 0.25s ease;
+}
+.ai-badge:hover {
+  transform: translateY(-2px);
+  border-color: var(--sepia);
+  box-shadow: 0 4px 10px rgba(40, 27, 18, 0.12);
+  background: #FFFFFF;
+}
+.ai-badge img {
+  width: 18px;
+  height: 18px;
+  display: block;
 }
 
 /* ------------------ Papiers Accrochés, Washi Tape & Trombones ------------------ */
@@ -675,24 +743,45 @@ ul, ol { list-style: none; }
   transform: rotate(-0.6deg);
 }
 
-/* Légère inclinaison organique des cartes collage */
+/* ------------------ Micro-interactions tactiles & Paper Lift ------------------ */
 .card-tilt-left {
   transform: rotate(-0.8deg);
 }
 .card-tilt-right {
   transform: rotate(0.8deg);
 }
-.parcours-ia-card.card-tilt-left:hover,
-.parcours-ia-card.card-tilt-right:hover,
-.service-card.card-tilt-left:hover,
-.service-card.card-tilt-right:hover,
-.projet-card.card-tilt-left:hover,
-.projet-card.card-tilt-right:hover {
-  transform: translateY(-6px) rotate(0deg);
+.parcours-ia-card,
+.service-card,
+.projet-card,
+.realisation-card,
+.thesis,
+.publication {
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
+              box-shadow 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
+              border-color 0.3s ease;
+  will-change: transform, box-shadow;
 }
-.projet-card.card-tilt-left:hover,
-.projet-card.card-tilt-right:hover {
-  transform: translateY(-6px) rotate(0deg);
+.parcours-ia-card:hover,
+.service-card:hover,
+.projet-card:hover,
+.realisation-card:hover,
+.thesis:hover,
+.publication:hover {
+  transform: translateY(-8px) scale(1.01) rotate(0deg) !important;
+  box-shadow: 0 20px 42px rgba(40, 27, 18, 0.16), 0 4px 10px rgba(40, 27, 18, 0.08);
+}
+.parcours-ia-card:hover .paperclip,
+.service-card:hover .paperclip,
+.projet-card:hover .paperclip,
+.hero-photo:hover .paperclip {
+  transform: rotate(4deg) translateY(-2px);
+  transition: transform 0.25s ease;
+}
+.parcours-ia-card:hover .tape,
+.service-card:hover .tape,
+.projet-card:hover .tape {
+  filter: brightness(1.05);
+  transition: filter 0.25s ease;
 }
 
 /* Boutons Vintage estampés */
@@ -1676,7 +1765,7 @@ ul, ol { list-style: none; }
 }
 
 /* ------------------ Responsive ------------------ */
-@media (max-width: 1180px) {
+@media (max-width: 1040px) {
   .site-header { padding: 0 16px; top: 12px; }
   .nav-wrapper { border-radius: 9999px; padding: 10px 18px; }
 

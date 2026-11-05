@@ -33,12 +33,12 @@
 
     navLinks.forEach((link) => {
       link.addEventListener('click', () => {
-        if (window.innerWidth <= 1180) setMenu(false);
+        if (window.innerWidth <= 1040) setMenu(false);
       });
     });
 
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 1180) setMenu(false);
+      if (window.innerWidth > 1040) setMenu(false);
     });
 
     document.addEventListener('click', (e) => {
@@ -125,5 +125,33 @@
     } catch (e) {
       /* navigateurs anciens */
     }
+  }
+
+  /* ---------- 8. Horloge à gousset temps réel (Heure de Brazzaville UTC+1) ---------- */
+  const hourHand = document.getElementById('watchHour');
+  const minuteHand = document.getElementById('watchMinute');
+  const secondHand = document.getElementById('watchSecond');
+
+  if (hourHand && minuteHand && secondHand) {
+    const tickClock = () => {
+      const now = new Date();
+      // Brazzaville : heure d'Afrique centrale / occidentale (UTC+1 fixe)
+      const utcMs = now.getTime() + (now.getTimezoneOffset() * 60000);
+      const bzDate = new Date(utcMs + (3600000 * 1));
+
+      const s = bzDate.getSeconds();
+      const m = bzDate.getMinutes();
+      const h = bzDate.getHours() % 12;
+
+      const sDeg = s * 6;
+      const mDeg = m * 6 + s * 0.1;
+      const hDeg = h * 30 + m * 0.5;
+
+      secondHand.setAttribute('transform', `rotate(${sDeg} 41 95)`);
+      minuteHand.setAttribute('transform', `rotate(${mDeg} 41 95)`);
+      hourHand.setAttribute('transform', `rotate(${hDeg} 41 95)`);
+    };
+    tickClock();
+    setInterval(tickClock, 1000);
   }
 })();
