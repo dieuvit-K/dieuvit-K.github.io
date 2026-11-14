@@ -249,7 +249,7 @@ h1, h2, h3, h4, .fact dt, .pipeline-num, .thesis-axes li::before, .pub-year stro
   border: 1px solid var(--accent); border-radius: 14px; opacity: .45;
 }
 .hero-photo img {
-  position: relative; width: 100%; aspect-ratio: 4 / 5; object-fit: cover;
+  position: relative; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover;
   border-radius: 14px; box-shadow: var(--shadow-md);
 }
 
@@ -326,6 +326,33 @@ h1, h2, h3, h4, .fact dt, .pipeline-num, .thesis-axes li::before, .pub-year stro
 .cta-band-title { font-family: var(--display); font-size: 25px; font-weight: 600; line-height: 1.25; }
 .cta-band-note { font-size: 14.5px; color: var(--ink-3); margin-top: 6px; max-width: 560px; }
 .cta-band-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+.level-price { font-size: 14.5px; color: var(--ink-3); margin: -4px 0 14px; }
+.level-price strong { font-family: var(--display); font-size: 24px; font-weight: 600; color: var(--accent-dark); margin-right: 2px; }
+
+/* ------------------ Tarifs ------------------ */
+.pricing { margin-top: 24px; scroll-margin-top: 90px; }
+.pricing-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 48px; margin: 22px 0 24px; }
+.pricing-head { font-size: 12.5px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--green); margin-bottom: 4px; }
+.price-list li { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.price-list span { font-weight: 600; color: var(--ink); }
+.price-list span small { display: block; font-size: 13.5px; font-weight: 400; color: var(--ink-3); }
+.price-list strong { font-family: var(--display); font-size: 23px; font-weight: 600; color: var(--accent-dark); white-space: nowrap; }
+.price-list strong small { font-family: var(--sans); font-size: 12px; font-weight: 500; color: var(--ink-3); }
+
+/* ------------------ Bloc repliable ------------------ */
+.more { margin-top: 26px; }
+.more summary { cursor: pointer; font-weight: 600; font-size: 15px; color: var(--accent-dark); padding: 8px 0; }
+.more[open] summary { margin-bottom: 22px; }
+
+/* ------------------ Bouton WhatsApp fixe (mobile) ------------------ */
+.wa-float {
+  display: none; position: fixed; right: 14px; bottom: 14px; z-index: 40;
+  align-items: center; justify-content: center; width: 54px; height: 54px; border-radius: 50%;
+  background: var(--green); color: #fff; font-weight: 600; font-size: 15px;
+  box-shadow: 0 8px 22px rgba(34, 26, 19, 0.28);
+}
+.wa-float .icon { width: 25px; height: 25px; }
 
 /* ------------------ 02 · Services ------------------ */
 .service-featured { border-color: rgba(138, 87, 34, 0.45); box-shadow: 0 0 0 1px rgba(138, 87, 34, 0.15), var(--shadow-sm); }
@@ -519,6 +546,7 @@ h1, h2, h3, h4, .fact dt, .pipeline-num, .thesis-axes li::before, .pub-year stro
 @media (max-width: 860px) {
   .grid-2, .grid-3, .levels { grid-template-columns: 1fr; }
   .hero-facts { grid-template-columns: repeat(2, 1fr); }
+  .wa-float { display: inline-flex; }
   .fact:nth-child(3) { padding-left: 0; border-left: 0; }
   .fact { padding-bottom: 18px; }
   .thesis-axes { grid-template-columns: 1fr; }
@@ -540,6 +568,19 @@ h1, h2, h3, h4, .fact dt, .pipeline-num, .thesis-axes li::before, .pub-year stro
   .hero-facts { margin-top: 48px; }
   .fact dt { font-size: 23px; }
   .hero-actions .btn-primary, .hero-actions .btn-ghost { flex: 1 1 100%; }
+  .hero { padding-top: 88px; }
+  .hero-inner { gap: 22px; }
+  .hero-photo { max-width: 104px; }
+  .hero-photo::before { inset: 6px -6px -6px 6px; }
+  .hero-photo img { aspect-ratio: 1 / 1; object-position: 50% 22%; border-radius: 12px; }
+  .eyebrow { margin-bottom: 14px; font-size: 12px; }
+  .hero-title { font-size: 38px; margin-bottom: 16px; }
+  .hero-lead { margin-bottom: 20px; }
+  .hero-text { display: flex; flex-direction: column; }
+  .hero-actions { order: 1; margin-bottom: 26px; }
+  .hero-by { order: 2; margin-bottom: 30px; }
+  .tools { order: 3; }
+  .pricing-cols { grid-template-columns: 1fr; gap: 26px; }
   .card, .feature, .thesis, .publication { padding: 26px 22px; }
   .card-title-lg { font-size: 27px; }
   .skills, .pipeline, .contact-grid, .form-grid { grid-template-columns: 1fr; }
