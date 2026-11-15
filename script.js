@@ -6,6 +6,7 @@
 
 (function () {
   'use strict';
+  const EN = document.documentElement.lang === 'en';
 
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -144,7 +145,7 @@
     nav.classList.toggle('open', open);
     toggle.classList.toggle('open', open);
     toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    toggle.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+    toggle.setAttribute('aria-label', EN ? (open ? 'Close menu' : 'Open menu') : (open ? 'Fermer le menu' : 'Ouvrir le menu'));
     document.body.style.overflow = open ? 'hidden' : '';
   };
 
@@ -218,10 +219,22 @@
     "Cours de SVT ou soutien scolaire": "Précisez : la classe de l'élève, les matières, l'objectif (Brevet, Bac D…) et les disponibilités.",
     "Autre demande": "Décrivez votre demande le plus clairement possible."
   };
+
+  const HINTS_EN = {
+    "Formation en intelligence artificielle": "Include: your level (beginner, intermediate, advanced), alone or in a group (how many people), in person in Brazzaville or online, and what you want to be able to do.",
+    "Mise en place d'agents IA et d'automatisations": "Include: your business, the tasks to automate, and the tools you already use (Gmail, Sheets, WhatsApp…).",
+    "Formation à la création de vidéos avec l'IA": "Include: your level, the kind of videos you want (TikTok, ads, education…) and the format (in person or online).",
+    "Réalisation de vidéos ou de publicités": "Include: the product or message, the desired length, target platforms and release date.",
+    "Publicité sur la page TikTok Le Raconteur": "Include: what you want to promote, your target audience and the desired period.",
+    "Création de portfolio ou de site vitrine": "Include: who it is for (you, a company…), what the site should present, and whether you already have texts and photos.",
+    "Conseil en recherche, thèse ou mémoire": "Include: your level (bachelor's, master's, PhD), your topic and the help you need (protocol, data analysis, review, presentation).",
+    "Cours de SVT ou soutien scolaire": "Include: the student's grade, subjects, goal and availability.",
+    "Autre demande": "Describe your request as clearly as possible."
+  };
   const hint = document.getElementById('formHint');
   const updateHint = () => {
     if (!hint || !formType) return;
-    hint.textContent = HINTS[formType.value] || 'Choisissez un service pour voir quoi préciser.';
+    hint.textContent = (EN ? HINTS_EN : HINTS)[formType.value] || (EN ? 'Choose a service to see what to include.' : 'Choisissez un service pour voir quoi préciser.');
   };
   if (formType) formType.addEventListener('change', updateHint);
 
@@ -248,22 +261,22 @@
         if (bad && !firstBad) firstBad = el;
       });
       if (firstBad) {
-        setStatus('Merci de remplir les champs obligatoires.', 'err');
+        setStatus(EN ? 'Please fill in the required fields.' : 'Merci de remplir les champs obligatoires.', 'err');
         firstBad.focus();
         return;
       }
 
       submit.disabled = true;
-      setStatus('Envoi en cours…');
+      setStatus(EN ? 'Sending…' : 'Envoi en cours…');
       const data = new URLSearchParams(new FormData(form));
       fetch(FORM_URL, { method: 'POST', mode: 'no-cors', body: data })
         .then(() => {
           form.reset();
           updateHint();
-          setStatus('Merci, votre demande a bien été envoyée. Réponse sous 48 h.', 'ok');
+          setStatus(EN ? 'Thank you, your request has been sent. Reply within 48 h.' : 'Merci, votre demande a bien été envoyée. Réponse sous 48 h.', 'ok');
         })
         .catch(() => {
-          setStatus('L\'envoi a échoué. Écrivez-moi sur WhatsApp ou par e-mail.', 'err');
+          setStatus(EN ? 'Sending failed. Please message me on WhatsApp or by e-mail.' : 'L\'envoi a échoué. Écrivez-moi sur WhatsApp ou par e-mail.', 'err');
         })
         .finally(() => { submit.disabled = false; });
     });
