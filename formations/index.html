@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Formations en intelligence artificielle et montage vidéo à Brazzaville : débutant, intermédiaire, agents autonomes. Tarifs en F CFA.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Formations · Dieuvit Kibamba">
+<meta property="og:description" content="Formations IA du débutant à l'expert et atelier montage vidéo. Tarifs en F CFA, réservation sur WhatsApp.">
+<meta property="og:url" content="https://dieuvit-k.github.io/formations/">
+<meta property="og:image" content="https://dieuvit-k.github.io/assets/photo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}</style>
+<title>Formations · Dieuvit Kibamba</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap">
+<style>
+/* Mise en page : en-tête nom en grand, puis cartes de niveaux en grille, bande séance gratuite, déroulé, contact. Couleurs reprises du portfolio. */
+:root{
+  --bg:#F7F3EA; --bg-2:#EFE8DA; --card:#FFFDF8; --line:rgba(34,26,19,.13);
+  --ink:#221A13; --muted:#54463A; --dim:#7D6B5A;
+  --brown:#8A5722; --brown-dark:#6E441A; --green:#3D5943; --on-accent:#FFFDF8;
+  --display:'Anton',Impact,'Arial Narrow',sans-serif;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'Space Mono',ui-monospace,monospace;
+  --radius:18px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#17110C; --bg-2:#201811; --card:#241B13; --line:rgba(247,243,234,.13);
+  --ink:#F3ECDF; --muted:#CDBFAE; --dim:#A8977F;
+  --brown:#D39A5A; --brown-dark:#E5B27A; --green:#8DB394; --on-accent:#17110C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#17110C; --bg-2:#201811; --card:#241B13; --line:rgba(247,243,234,.13);
+  --ink:#F3ECDF; --muted:#CDBFAE; --dim:#A8977F;
+  --brown:#D39A5A; --brown-dark:#E5B27A; --green:#8DB394; --on-accent:#17110C; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans)}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+section{padding-block:56px}
+h1,h2,h3{text-wrap:balance;margin:0}
+a{color:inherit}
+.eyebrow{font:700 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--brown)}
+.outline{color:transparent;-webkit-text-stroke:1.5px var(--ink)}
+
+/* En-tête */
+header.hero{padding-block:56px 40px;border-bottom:1px solid var(--line)}
+.hero h1{font:400 clamp(44px,9vw,104px)/.95 var(--display);text-transform:uppercase;letter-spacing:.01em;margin-top:18px}
+.hero p.lead{max-width:62ch;color:var(--muted);font-size:18px;margin:22px 0 0}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{font:12px/1 var(--mono);border:1px solid var(--line);border-radius:99px;padding:8px 12px;color:var(--muted);background:var(--card)}
+
+.sec-head{display:grid;gap:10px;margin-bottom:30px}
+.sec-head h2{font:400 clamp(30px,5vw,48px)/1.05 var(--display);text-transform:uppercase}
+.sec-head p{color:var(--muted);max-width:62ch;margin:0}
+
+/* Cartes de formation */
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.card.hot{border-color:var(--brown)}
+.card-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.level{font:700 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
+.price{font:400 32px/1 var(--display);color:var(--brown);font-variant-numeric:tabular-nums;white-space:nowrap}
+.price small{font:700 12px var(--mono);color:var(--dim);margin-left:4px}
+.card h3{font:700 22px/1.25 var(--sans)}
+.facts{font:13px/1.5 var(--mono);color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 14px}
+.card p{margin:0;color:var(--muted)}
+.card ul{margin:0;padding-left:18px;display:grid;gap:6px}
+.card li::marker{color:var(--brown)}
+.who{border-top:1px dashed var(--line);padding-top:12px;font-size:14px;color:var(--muted)}
+.who strong{display:block;font:700 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink);margin-bottom:4px}
+.card .btn{margin-top:auto;align-self:flex-start}
+
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 15px var(--sans);text-decoration:none;border-radius:99px;padding:12px 20px;border:1.5px solid var(--brown);color:var(--brown);background:transparent;cursor:pointer}
+.btn:hover{background:var(--brown);color:var(--on-accent)}
+.btn.solid{background:var(--brown);color:var(--on-accent)}
+.btn.solid:hover{background:var(--brown-dark);border-color:var(--brown-dark)}
+.btn:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+
+/* Bande gratuite */
+.free{background:var(--green);color:var(--on-accent);border-radius:var(--radius);padding:30px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:center}
+.free h2{font:400 clamp(26px,4vw,38px)/1.1 var(--display);text-transform:uppercase}
+.free p{margin:8px 0 0;opacity:.9;max-width:60ch}
+.free .btn{border-color:var(--on-accent);color:var(--on-accent)}
+.free .btn:hover{background:var(--on-accent);color:var(--green)}
+
+/* Déroulé */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{border-top:2px solid var(--brown);padding-top:14px;min-width:0}
+.steps li::before{counter-increment:s;content:"Étape " counter(s);font:700 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--brown)}
+.steps h3{font:700 18px var(--sans);margin:8px 0 4px}
+.steps p{margin:0;color:var(--muted)}
+
+/* Contact */
+.contact{background:var(--bg-2);border-top:1px solid var(--line)}
+.contact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.c-item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;display:grid;gap:6px;min-width:0}
+.c-label{font:700 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.c-value{font:600 17px var(--sans);overflow-wrap:anywhere;user-select:all}
+.c-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.c-actions .btn{padding:8px 14px;font-size:14px}
+footer{padding-block:28px;color:var(--dim);font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+
+@media (max-width:760px){
+  .grid,.steps,.contact-grid{grid-template-columns:minmax(0,1fr)}
+  .free{grid-template-columns:minmax(0,1fr)}
+  section{padding-block:44px}
+}
+@media (prefers-reduced-motion:no-preference){.btn{transition:background .2s,color .2s}}
+</style>
+
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Formations · Brazzaville et en ligne</span>
+    <h1>Dieuvit <span class="outline">Kibamba</span></h1>
+    <p class="lead">Formateur en intelligence artificielle et doctorant en microbiologie. Des formations pratiques, du débutant à l'expert, pour utiliser l'IA dans vos études, votre travail ou votre entreprise.</p>
+    <div class="meta">
+      <span class="chip">Tarifs en francs CFA</span>
+      <span class="chip">Pour étudiants, enseignants, chercheurs, entrepreneurs</span>
+      <span class="chip">Devis précis après un premier échange</span>
+    </div>
+  </div>
+</header>
+
+<section id="formations">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Les formations</span>
+      <h2>Apprendre l'IA, <span class="outline">pas à pas</span></h2>
+      <p>Choisissez votre niveau. Chaque parcours est pratique : on travaille sur vos propres cas.</p>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <div class="card-top"><span class="level">Niveau 1 · Débutant</span><span class="price">15 000<small>F CFA</small></span></div>
+        <h3>Initiation et prise en main</h3>
+        <div class="facts"><span>2 séances</span><span>ChatGPT, Gemini…</span></div>
+        <p>Comprendre comment fonctionne l'IA générative et écrire des demandes efficaces au quotidien.</p>
+        <ul>
+          <li>Les modèles de langage et des usages concrets</li>
+          <li>Les bases du prompt pour des résultats précis</li>
+          <li>Rédaction, résumé de documents, recherche guidée</li>
+          <li>Esprit critique : vérifier les sources, repérer les biais</li>
+        </ul>
+        <div class="who"><strong>Pour qui</strong>Débutants complets, étudiants, enseignants, curieux. Aucun prérequis technique.</div>
+        <a class="btn" href="https://wa.me/242065058034?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20la%20formation%20IA%20d%C3%A9butant." target="_blank" rel="noopener">Réserver ce niveau</a>
+      </article>
+
+      <article class="card">
+        <div class="card-top"><span class="level">Niveau 2 · Intermédiaire</span><span class="price">20 000<small>F CFA</small></span></div>
+        <h3>Méthodes et productivité</h3>
+        <div class="facts"><span>3 séances</span><span>Claude Code, Codex, Antigravity</span></div>
+        <p>Intégrer l'IA dans vos méthodes de travail pour gagner du temps et de la régularité.</p>
+        <ul>
+          <li>Prise en main de Claude Code, Codex et Antigravity</li>
+          <li>Analyse de documents volumineux et de tableaux</li>
+          <li>Automatiser les tâches répétitives de bureau et de veille</li>
+          <li>Créer des supports visuels, présentations et contenus</li>
+        </ul>
+        <div class="who"><strong>Pour qui</strong>Professionnels, universitaires, chercheurs, formateurs et entrepreneurs.</div>
+        <a class="btn" href="https://wa.me/242065058034?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20la%20formation%20IA%20interm%C3%A9diaire." target="_blank" rel="noopener">Réserver ce niveau</a>
+      </article>
+
+      <article class="card hot">
+        <div class="card-top"><span class="level">Niveau 3 · Avancé et expert</span><span class="price">25 000<small>F CFA</small></span></div>
+        <h3>Agents autonomes et automatisation</h3>
+        <div class="facts"><span>2 séances</span><span>Hermes Agent, Instinct, OpenClaw</span></div>
+        <p>Comprendre et mettre en place des agents autonomes qui enchaînent des tâches complexes.</p>
+        <ul>
+          <li>Fonctionnement des agents autonomes</li>
+          <li>Installation et usage : Hermes Agent, Instinct, OpenClaw</li>
+          <li>Chaînes de travail connectées et automatisations</li>
+          <li>Résoudre méthodiquement des processus en plusieurs étapes</li>
+        </ul>
+        <div class="who"><strong>Pour qui</strong>Utilisateurs expérimentés, chefs de projet, professionnels qui veulent automatiser.</div>
+        <a class="btn solid" href="https://wa.me/242065058034?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20la%20formation%20agents%20autonomes." target="_blank" rel="noopener">Réserver ce niveau</a>
+      </article>
+
+      <article class="card">
+        <div class="card-top"><span class="level">Atelier · Création</span><span class="price">10 000<small>F CFA</small></span></div>
+        <h3>Montage vidéo</h3>
+        <div class="facts"><span>Programme sur demande</span></div>
+        <p>Apprendre à monter vos propres vidéos. Le contenu et le nombre de séances sont fixés avec vous lors du premier échange.</p>
+        <div class="who"><strong>Pour qui</strong>Toute personne qui veut produire ses vidéos elle-même.</div>
+        <a class="btn" href="https://wa.me/242065058034?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20la%20formation%20montage%20vid%C3%A9o." target="_blank" rel="noopener">Réserver cet atelier</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="free">
+      <div>
+        <h2>Envie d'essayer d'abord ?</h2>
+        <p>Rejoignez le groupe WhatsApp gratuit « AI autrement » : une séance gratuite chaque semaine et des astuces pratiques.</p>
+      </div>
+      <a class="btn" href="https://chat.whatsapp.com/LcHf0zC00cR6ossgJPcyrW" target="_blank" rel="noopener">Rejoindre le groupe gratuit</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:8px">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Comment ça se passe</span>
+      <h2>Trois étapes <span class="outline">simples</span></h2>
+    </div>
+    <ol class="steps">
+      <li><h3>Vous m'écrivez</h3><p>Sur WhatsApp ou par e-mail, avec le niveau qui vous intéresse.</p></li>
+      <li><h3>On fixe le cadre</h3><p>Vos objectifs, les dates des séances et le tarif final.</p></li>
+      <li><h3>On pratique</h3><p>Les séances se font sur vos propres cas, pour repartir avec du concret.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Contact</span>
+      <h2>Réserver <span class="outline">une formation</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="c-item">
+        <span class="c-label">WhatsApp et téléphone</span>
+        <span class="c-value" id="tel">+242 06 505 80 34</span>
+        <div class="c-actions">
+          <a class="btn solid" href="https://wa.me/242065058034" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+          <button class="btn" type="button" id="copy-tel" data-copy="+242 06 505 80 34">Copier</button>
+        </div>
+      </div>
+      <div class="c-item">
+        <span class="c-label">E-mail</span>
+        <span class="c-value">dieuvitk@gmail.com</span>
+        <div class="c-actions"><button class="btn" type="button" id="copy-mail" data-copy="dieuvitk@gmail.com">Copier</button></div>
+      </div>
+      <div class="c-item">
+        <span class="c-label">Portfolio</span>
+        <span class="c-value">dieuvit-k.github.io</span>
+        <div class="c-actions">
+          <a class="btn" href="https://dieuvit-k.github.io/" target="_blank" rel="noopener">Voir le portfolio</a>
+          <a class="btn" href="https://linkedin.com/in/dieuvit-kibamba" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>Dieuvit Kibamba · Formateur en IA · Brazzaville, Congo</span><span>Le « niveau expert » désigne la portée du parcours, pas une certification officielle.</span></div></footer>
+
+<script>
+document.querySelectorAll('[data-copy]').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=b.getAttribute('data-copy'),old=b.textContent;
+    function done(){b.textContent='Copié';setTimeout(function(){b.textContent=old},1600)}
+    try{navigator.clipboard.writeText(t).then(done,function(){b.textContent='Sélectionnez le texte'});}
+    catch(e){b.textContent='Sélectionnez le texte'}
+  });
+});
+</script>
+</body>
+</html>
